@@ -86,8 +86,20 @@ export function Investment() {
                       <span className="text-[14px] font-mono text-text-secondary tabular-nums">{formatCurrency(q.setupFee.amount)}</span>
                     </div>
                   )}
+                  {q.model === "retainer" && (
+                    <div className="px-10 py-4 flex items-center justify-between border-t border-border">
+                      <span className="text-[13px] text-text-muted">Monthly Retainer</span>
+                      <span className="text-[14px] font-mono text-text-secondary tabular-nums">{formatCurrency(q.subtotal)}<span className="text-text-muted/60 text-[11px]">/mo</span></span>
+                    </div>
+                  )}
+                  {q.model === "retainer" && (
+                    <div className="px-10 py-4 flex items-center justify-between border-t border-border">
+                      <span className="text-[13px] text-text-muted">Campaign Length</span>
+                      <span className="text-[14px] font-mono text-text-secondary tabular-nums">{PROJECT.project.duration}</span>
+                    </div>
+                  )}
                   <div className="px-10 py-6 flex items-center justify-between border-t border-border">
-                    <span className="text-[18px] font-semibold text-text-primary tracking-[-0.01em]">Total Engagement</span>
+                    <span className="text-[18px] font-semibold text-text-primary tracking-[-0.01em]">{q.model === "retainer" ? "Total Campaign Value" : "Total"}</span>
                     <span className="text-[28px] font-bold font-mono text-accent tabular-nums tracking-[-0.03em]">
                       <AnimatedCurrency value={q.total} />
                     </span>
