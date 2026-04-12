@@ -145,6 +145,7 @@ export type ProjectData = {
     editorial: string;
     texture: string;
     brutalist: string;
+    heroBg?: string;
     hero1Caption?: string;
     brutalistCaption?: string;
   };

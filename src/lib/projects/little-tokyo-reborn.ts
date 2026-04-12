@@ -319,12 +319,13 @@ export const littleTokyoReborn: ProjectData = {
   },
 
   images: {
-    hero1: "/images/little-tokyo-reborn/hero1.png",
-    hero2: "/images/little-tokyo-reborn/hero2.png",
-    product: "/images/little-tokyo-reborn/product.png",
-    editorial: "/images/little-tokyo-reborn/editorial.png",
-    texture: "/images/little-tokyo-reborn/texture.png",
-    brutalist: "/images/little-tokyo-reborn/brutalist.png",
+    hero1: "/images/little-tokyo-reborn/hero1.jpg",
+    hero2: "/images/little-tokyo-reborn/hero2.jpg",
+    product: "/images/little-tokyo-reborn/product.jpg",
+    editorial: "/images/little-tokyo-reborn/editorial.jpg",
+    texture: "/images/little-tokyo-reborn/texture.jpg",
+    brutalist: "/images/little-tokyo-reborn/brutalist.jpg",
+    heroBg: "/images/little-tokyo-reborn/torii-bg.jpg",
     hero1Caption: "Full-Service Marketing + Creative Campaign",
     brutalistCaption: "Little Tokyo × Crowd Control Digital"
   }

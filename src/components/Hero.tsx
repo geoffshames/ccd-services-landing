@@ -7,6 +7,16 @@ export function Hero() {
   const PROJECT = useProject();
   return (
     <section className="relative min-h-screen flex flex-col justify-end px-6 pb-16 pt-32 overflow-hidden grid-texture">
+      {/* Hero background image */}
+      {PROJECT.images.heroBg && (
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.07] pointer-events-none"
+          style={{ backgroundImage: `url(${PROJECT.images.heroBg})` }}
+        />
+      )}
+      {/* Gradient overlay to ensure text readability */}
+      <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/80 to-bg/40 pointer-events-none" />
+
       {/* Background gradient orb */}
       <div className="absolute top-1/3 left-1/3 w-[600px] h-[600px] rounded-full bg-accent/[0.02] blur-[150px] pointer-events-none" />
 
