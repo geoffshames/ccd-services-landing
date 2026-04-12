@@ -4,12 +4,10 @@ import { useProject } from "@/lib/project-context";
 import { ScrollReveal, StaggerContainer, StaggerItem } from "./ScrollReveal";
 import { SectionLabel } from "./SectionLabel";
 import { TiltCard } from "./TiltCard";
-import { AnimatedCounter } from "./AnimatedCounter";
 import { ParallaxImage } from "./ParallaxImage";
 
 export function Deliverables() {
   const PROJECT = useProject();
-  const [creative, hero, social, presentation] = PROJECT.deliverables;
 
   return (
     <section id="deliverables" className="relative py-32 px-6">
@@ -25,9 +23,11 @@ export function Deliverables() {
             <h2 className="text-4xl md:text-[3.5rem] font-bold tracking-[-0.03em] leading-[1.05] mb-8">
               What You Get
             </h2>
-            <p className="text-[16px] text-text-secondary leading-[1.8] tracking-[-0.01em]">
-              Every asset crafted at production quality, delivered in formats ready for immediate deployment.
-            </p>
+            {PROJECT.deliverablesSubheading && (
+              <p className="text-[16px] text-text-secondary leading-[1.8] tracking-[-0.01em]">
+                {PROJECT.deliverablesSubheading}
+              </p>
+            )}
           </ScrollReveal>
 
           <div className="lg:col-span-7">
@@ -40,193 +40,54 @@ export function Deliverables() {
           </div>
         </div>
 
-        {/* Creative Direction */}
-        <ScrollReveal delay={0.05}>
-          <div className="flex items-baseline gap-4 mb-8">
-            <h3 className="text-[22px] font-semibold text-text-primary tracking-[-0.02em]">{creative.category}</h3>
-            <div className="flex-1 h-px bg-border" />
+        {PROJECT.deliverables.map((category, catIdx) => (
+          <div key={catIdx} className="mb-24 last:mb-20">
+            <ScrollReveal delay={0.05}>
+              <div className="flex items-baseline gap-4 mb-8">
+                <h3 className="text-[22px] font-semibold text-text-primary tracking-[-0.02em]">{category.category}</h3>
+                <div className="flex-1 h-px bg-border" />
+              </div>
+            </ScrollReveal>
+
+            <StaggerContainer className="grid md:grid-cols-12 gap-5" staggerDelay={0.1}>
+              {category.items.map((item, i) => {
+                // First item in each category gets the wide treatment
+                const isFirst = i === 0;
+                // Alternate layout patterns for visual variety
+                const isWide = isFirst && category.items.length > 2;
+                const colSpan = isWide ? "md:col-span-7" : category.items.length === 1 ? "md:col-span-12" : category.items.length === 2 ? "md:col-span-6" : i === 1 && isFirst ? "md:col-span-5" : "md:col-span-6";
+
+                // Use accent card style for the last item in categories with 3+ items
+                const isAccent = i === category.items.length - 1 && category.items.length >= 3;
+
+                return (
+                  <StaggerItem key={i} className={colSpan} variant="scaleIn">
+                    <TiltCard className="group h-full">
+                      <div className={`rounded-none p-10 h-full transition-all duration-500 ${
+                        isAccent
+                          ? "bg-white/[0.05] border border-white/[0.08] hover:bg-white/[0.08]"
+                          : "card frame bg-bg-card hover:bg-bg-card-hover"
+                      }`}>
+                        <div className="flex items-start justify-between mb-5">
+                          <h4 className={`${isWide ? "text-[22px]" : "text-[18px]"} font-bold text-text-primary tracking-[-0.01em] group-hover:text-accent transition-colors duration-500`}>
+                            {item.name}
+                          </h4>
+                          <span className="text-[11px] font-mono text-accent/70 tracking-[0.1em] whitespace-nowrap ml-4">
+                            {item.quantity.toUpperCase()}
+                          </span>
+                        </div>
+                        <p className={`${isWide ? "text-[16px]" : "text-[15px]"} text-text-muted leading-[1.7]`}>
+                          {item.description}
+                        </p>
+                      </div>
+                    </TiltCard>
+                  </StaggerItem>
+                );
+              })}
+            </StaggerContainer>
           </div>
-        </ScrollReveal>
+        ))}
 
-        <StaggerContainer className="grid md:grid-cols-12 gap-5 mb-24" staggerDelay={0.1}>
-          <StaggerItem className="md:col-span-7" variant="scaleIn">
-            <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
-                <div className="flex items-start justify-between mb-5">
-                  <h4 className="text-[22px] font-bold text-text-primary tracking-[-0.01em] group-hover:text-accent transition-colors duration-500">
-                    {creative.items[0].name}
-                  </h4>
-                  <span className="text-[11px] font-mono text-accent tracking-[0.1em]">{creative.items[0].quantity.toUpperCase()}</span>
-                </div>
-                <p className="text-[16px] text-text-muted leading-[1.7]">
-                  {creative.items[0].description}
-                </p>
-              </div>
-            </TiltCard>
-          </StaggerItem>
-
-          <StaggerItem className="md:col-span-5" variant="scaleIn">
-            <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full flex flex-col justify-between">
-                <span className="text-[11px] font-mono text-accent tracking-[0.1em]">{creative.items[1].quantity.toUpperCase()}</span>
-                <div className="mt-6">
-                  <h4 className="text-[18px] font-bold text-text-primary mb-2 group-hover:text-accent transition-colors duration-500">{creative.items[1].name}</h4>
-                  <p className="text-[15px] text-text-muted leading-[1.7]">{creative.items[1].description}</p>
-                </div>
-              </div>
-            </TiltCard>
-          </StaggerItem>
-
-          <StaggerItem className="md:col-span-5" variant="scaleIn">
-            <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
-                <span className="text-[11px] font-mono text-accent/60 tracking-[0.1em] block mb-5">{creative.items[2].quantity.toUpperCase()}</span>
-                <h4 className="text-[18px] font-bold text-text-primary mb-2 group-hover:text-accent transition-colors duration-500">{creative.items[2].name}</h4>
-                <p className="text-[15px] text-text-muted leading-[1.7]">{creative.items[2].description}</p>
-              </div>
-            </TiltCard>
-          </StaggerItem>
-
-          <StaggerItem className="md:col-span-7" variant="scaleIn">
-            <TiltCard className="group h-full">
-              <div className="bg-white/[0.05] border border-white/[0.08] rounded-none p-10 hover:bg-white/[0.08] transition-all duration-500 h-full flex items-center gap-10">
-                <span className="text-[56px] font-light text-accent/15 leading-none tracking-[-0.04em]">{creative.icon}</span>
-                <div>
-                  <h4 className="text-[18px] font-bold text-text-primary mb-2 group-hover:text-accent transition-colors duration-500">{creative.items[3].name}</h4>
-                  <p className="text-[15px] text-text-muted leading-[1.7]">{creative.items[3].description}</p>
-                </div>
-              </div>
-            </TiltCard>
-          </StaggerItem>
-        </StaggerContainer>
-
-        {/* Hero Visual Assets */}
-        <ScrollReveal delay={0.05}>
-          <div className="flex items-baseline gap-4 mb-8">
-            <h3 className="text-[22px] font-semibold text-text-primary tracking-[-0.02em]">{hero.category}</h3>
-            <div className="flex-1 h-px bg-border" />
-          </div>
-        </ScrollReveal>
-
-        <StaggerContainer className="grid md:grid-cols-12 gap-5 mb-24" staggerDelay={0.1}>
-          <StaggerItem className="md:col-span-12" variant="scaleIn">
-            <TiltCard className="group">
-              <div className="bg-gradient-to-r from-white/[0.06] to-white/[0.03] border border-white/[0.08] rounded-none p-12 hover:from-white/[0.09] hover:to-white/[0.05] transition-all duration-500 flex flex-col md:flex-row md:items-center gap-10">
-                <div className="text-[64px] font-light text-accent/20 leading-none tracking-[-0.04em] group-hover:text-accent/35 transition-colors">5</div>
-                <div className="flex-1">
-                  <h4 className="text-[20px] font-semibold text-text-primary mb-3 tracking-[-0.01em] group-hover:text-accent transition-colors duration-500">{hero.items[0].name}</h4>
-                  <p className="text-[16px] text-text-muted leading-[1.7]">{hero.items[0].description}</p>
-                </div>
-              </div>
-            </TiltCard>
-          </StaggerItem>
-
-          <StaggerItem className="md:col-span-6" variant="scaleIn">
-            <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
-                <span className="text-[11px] font-mono text-accent/60 tracking-[0.1em] block mb-5">{hero.items[1].quantity.toUpperCase()}</span>
-                <h4 className="text-[18px] font-bold text-text-primary mb-2 group-hover:text-accent transition-colors duration-500">{hero.items[1].name}</h4>
-                <p className="text-[15px] text-text-muted leading-[1.7]">{hero.items[1].description}</p>
-              </div>
-            </TiltCard>
-          </StaggerItem>
-
-          <StaggerItem className="md:col-span-6" variant="scaleIn">
-            <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
-                <span className="text-[11px] font-mono text-accent/60 tracking-[0.1em] block mb-5">{hero.items[2].quantity.toUpperCase()}</span>
-                <h4 className="text-[18px] font-bold text-text-primary mb-2 group-hover:text-accent transition-colors duration-500">{hero.items[2].name}</h4>
-                <p className="text-[15px] text-text-muted leading-[1.7]">{hero.items[2].description}</p>
-              </div>
-            </TiltCard>
-          </StaggerItem>
-        </StaggerContainer>
-
-        {/* Social Content Assets */}
-        <ScrollReveal delay={0.05}>
-          <div className="flex items-baseline gap-4 mb-8">
-            <h3 className="text-[22px] font-semibold text-text-primary tracking-[-0.02em]">{social.category}</h3>
-            <div className="flex-1 h-px bg-border" />
-          </div>
-        </ScrollReveal>
-
-        <StaggerContainer className="grid md:grid-cols-12 gap-5 mb-24" staggerDelay={0.1}>
-          <StaggerItem className="md:col-span-8" variant="scaleIn">
-            <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
-                <div className="flex items-start justify-between mb-5">
-                  <h4 className="text-[22px] font-bold text-text-primary tracking-[-0.01em] group-hover:text-accent transition-colors duration-500">
-                    {social.items[0].name}
-                  </h4>
-                  <span className="text-[11px] font-mono text-accent tracking-[0.1em]">{social.items[0].quantity.toUpperCase()}</span>
-                </div>
-                <p className="text-[16px] text-text-muted leading-[1.7]">{social.items[0].description}</p>
-              </div>
-            </TiltCard>
-          </StaggerItem>
-
-          <StaggerItem className="md:col-span-4" variant="scaleIn">
-            <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full flex flex-col justify-between">
-                <span className="text-[11px] font-mono text-accent tracking-[0.1em]">{social.items[1].quantity.toUpperCase()}</span>
-                <div className="mt-6">
-                  <h4 className="text-[18px] font-bold text-text-primary mb-2 group-hover:text-accent transition-colors duration-500">{social.items[1].name}</h4>
-                  <p className="text-[15px] text-text-muted leading-[1.7]">{social.items[1].description}</p>
-                </div>
-              </div>
-            </TiltCard>
-          </StaggerItem>
-
-          <StaggerItem className="md:col-span-5" variant="scaleIn">
-            <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
-                <span className="text-[11px] font-mono text-accent/60 tracking-[0.1em] block mb-5">{social.items[2].quantity.toUpperCase()}</span>
-                <h4 className="text-[18px] font-bold text-text-primary mb-2 group-hover:text-accent transition-colors duration-500">{social.items[2].name}</h4>
-                <p className="text-[15px] text-text-muted leading-[1.7]">{social.items[2].description}</p>
-              </div>
-            </TiltCard>
-          </StaggerItem>
-
-          <StaggerItem className="md:col-span-7" variant="scaleIn">
-            <TiltCard className="group h-full">
-              <div className="bg-white/[0.05] border border-white/[0.08] rounded-none p-10 hover:bg-white/[0.08] transition-all duration-500 h-full flex items-center gap-10">
-                <span className="text-[56px] font-light text-accent/15 leading-none tracking-[-0.04em]">2</span>
-                <div>
-                  <h4 className="text-[18px] font-bold text-text-primary mb-2 group-hover:text-accent transition-colors duration-500">{social.items[3].name}</h4>
-                  <p className="text-[15px] text-text-muted leading-[1.7]">{social.items[3].description}</p>
-                </div>
-              </div>
-            </TiltCard>
-          </StaggerItem>
-        </StaggerContainer>
-
-        {/* Presentation / Internal Use */}
-        <ScrollReveal delay={0.05}>
-          <div className="flex items-baseline gap-4 mb-8">
-            <h3 className="text-[22px] font-semibold text-text-primary tracking-[-0.02em]">{presentation.category}</h3>
-            <div className="flex-1 h-px bg-border" />
-          </div>
-        </ScrollReveal>
-
-        <StaggerContainer className="grid md:grid-cols-3 gap-5 mb-20" staggerDelay={0.1}>
-          {presentation.items.map((item, i) => (
-            <StaggerItem key={i} variant="scaleIn">
-              <TiltCard className="group h-full">
-                <div className={`rounded-none p-10 h-full transition-all duration-500 ${
-                  i === 0
-                    ? "bg-white/[0.05] border border-white/[0.08] hover:bg-white/[0.08]"
-                    : "card frame bg-bg-card hover:bg-bg-card-hover"
-                }`}>
-                  <span className="text-[11px] font-mono text-accent/60 tracking-[0.1em] block mb-6">{item.quantity.toUpperCase()}</span>
-                  <h4 className="text-[16px] font-semibold text-text-primary mb-3 group-hover:text-accent transition-colors duration-500">{item.name}</h4>
-                  <p className="text-[15px] text-text-muted leading-[1.7]">{item.description}</p>
-                </div>
-              </TiltCard>
-            </StaggerItem>
-          ))}
-        </StaggerContainer>
-
-        {/* Divider */}
         <div className="section-divider max-w-6xl mx-auto mt-16" />
       </div>
     </section>
