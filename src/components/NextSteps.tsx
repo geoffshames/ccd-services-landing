@@ -29,9 +29,9 @@ export function NextSteps() {
           {/* Step 1 - wide */}
           <StaggerItem className="md:col-span-7" variant="slideRight">
             <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-2xl p-7 hover:bg-bg-card-hover transition-all duration-500 h-full">
+              <div className="card frame bg-bg-card rounded-none p-7 hover:bg-bg-card-hover transition-all duration-500 h-full">
                 <div className="flex items-start gap-5">
-                  <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:scale-105 transition-all duration-500">
+                  <div className="w-12 h-12 rounded-none bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:scale-105 transition-all duration-500">
                     <span className="text-lg font-mono text-accent group-hover:text-bg transition-colors duration-500 font-bold">1</span>
                   </div>
                   <div>
@@ -46,7 +46,7 @@ export function NextSteps() {
           {/* Step 2 - narrow */}
           <StaggerItem className="md:col-span-5" variant="slideLeft">
             <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-2xl p-6 hover:bg-bg-card-hover transition-all duration-500 h-full flex flex-col justify-center">
+              <div className="card frame bg-bg-card rounded-none p-6 hover:bg-bg-card-hover transition-all duration-500 h-full flex flex-col justify-center">
                 <span className="text-[11px] font-mono text-accent/60 mb-3">Step 2</span>
                 <h3 className="text-[15px] font-semibold text-text-primary mb-1">{steps[1].title}</h3>
                 <p className="text-[13px] text-text-muted leading-relaxed">{steps[1].description}</p>
@@ -57,7 +57,7 @@ export function NextSteps() {
           {/* Step 3 - narrow */}
           <StaggerItem className="md:col-span-4" variant="scaleIn">
             <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-2xl p-6 hover:bg-bg-card-hover transition-all duration-500 h-full flex flex-col justify-center">
+              <div className="card frame bg-bg-card rounded-none p-6 hover:bg-bg-card-hover transition-all duration-500 h-full flex flex-col justify-center">
                 <span className="text-[11px] font-mono text-accent/60 mb-3">Step 3</span>
                 <h3 className="text-[15px] font-semibold text-text-primary mb-1">{steps[2].title}</h3>
                 <p className="text-[13px] text-text-muted leading-relaxed">{steps[2].description}</p>
@@ -68,7 +68,7 @@ export function NextSteps() {
           {/* Step 4 - wide accent */}
           <StaggerItem className="md:col-span-8" variant="scaleIn">
             <TiltCard className="group h-full">
-              <div className="bg-white/[0.07] border border-white/[0.12] rounded-2xl p-7 hover:bg-white/[0.10] hover:border-white/[0.20] transition-all duration-500 h-full flex items-center gap-6">
+              <div className="bg-white/[0.07] border border-white/[0.12] rounded-none p-7 hover:bg-white/[0.10] hover:border-white/[0.20] transition-all duration-500 h-full flex items-center gap-6">
                 <div className="text-[48px] font-bold text-accent/20 leading-none group-hover:text-accent/40 transition-colors">04</div>
                 <div>
                   <h3 className="text-[17px] font-semibold text-text-primary mb-1">{steps[3].title}</h3>
@@ -81,8 +81,8 @@ export function NextSteps() {
           {/* Step 5 - full width */}
           <StaggerItem className="md:col-span-12" variant="scaleIn">
             <TiltCard className="group">
-              <div className="card frame bg-bg-card rounded-2xl p-7 hover:bg-bg-card-hover transition-all duration-500 flex items-center gap-6">
-                <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:scale-105 transition-all duration-500">
+              <div className="card frame bg-bg-card rounded-none p-7 hover:bg-bg-card-hover transition-all duration-500 flex items-center gap-6">
+                <div className="w-12 h-12 rounded-none bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:scale-105 transition-all duration-500">
                   <span className="text-lg font-mono text-accent group-hover:text-bg transition-colors duration-500 font-bold">5</span>
                 </div>
                 <div>
@@ -97,7 +97,7 @@ export function NextSteps() {
         {/* Contact CTA */}
         <ScrollReveal delay={0.3} variant="scaleIn" className="mt-16">
           <TiltCard className="group max-w-xl mx-auto">
-            <div className="card frame bg-bg-card rounded-2xl p-8 text-center hover:bg-bg-card-hover transition-all duration-500">
+            <div className="card frame bg-bg-card rounded-none p-8 text-center hover:bg-bg-card-hover transition-all duration-500">
               <h3 className="text-lg font-semibold text-text-primary mb-2">
                 {PROJECT.cta.body}
               </h3>
@@ -108,7 +108,7 @@ export function NextSteps() {
                 href={`mailto:${PROJECT.studio.email}`}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="inline-block bg-accent text-white font-semibold text-[15px] px-10 py-4 rounded-xl hover:bg-accent/90 transition-colors"
+                className="inline-block bg-accent text-white font-semibold text-[15px] px-10 py-4 rounded-none hover:bg-accent/90 transition-colors"
               >
                 Get in Touch
               </motion.a>

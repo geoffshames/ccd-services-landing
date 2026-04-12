@@ -57,7 +57,7 @@ export function Timeline() {
               src={PROJECT.images.texture}
               alt={`${PROJECT.client.name} production process`}
               caption={PROJECT.timelineImageCaption || `${PROJECT.project.duration} / ${PROJECT.timeline.length} Phases`}
-              className="aspect-[16/10] rounded-2xl"
+              className="aspect-[16/10] rounded-none"
             />
           </div>
         </div>
@@ -68,7 +68,7 @@ export function Timeline() {
             <StaggerItem key={i} variant="scaleIn">
               <TiltCard className="group">
                 <div
-                  className={`gradient-border rounded-xl overflow-hidden transition-all duration-500 ${
+                  className={`gradient-border rounded-none overflow-hidden transition-all duration-500 ${
                     expanded === i ? "bg-bg-card" : "bg-bg-card/50 hover:bg-bg-card"
                   }`}
                 >
@@ -76,7 +76,7 @@ export function Timeline() {
                     onClick={() => setExpanded(expanded === i ? null : i)}
                     className="w-full text-left p-8 md:p-10 flex items-center gap-6 md:gap-10"
                   >
-                    <div className={`flex-shrink-0 w-14 h-14 rounded-xl flex items-center justify-center text-base font-mono font-bold transition-all duration-500 ${
+                    <div className={`flex-shrink-0 w-14 h-14 rounded-none flex items-center justify-center text-base font-mono font-bold transition-all duration-500 ${
                       expanded === i
                         ? "bg-accent text-bg scale-110"
                         : "bg-accent/10 text-accent group-hover:scale-105"
@@ -89,7 +89,7 @@ export function Timeline() {
                         <h3 className="text-[20px] font-bold text-text-primary truncate">
                           {phase.phase}
                         </h3>
-                        <span className="hidden md:inline-block text-[11px] font-mono tracking-wider text-text-muted bg-bg-elevated px-3 py-1 rounded-full uppercase">
+                        <span className="hidden md:inline-block text-[11px] font-mono tracking-wider text-text-muted bg-bg-elevated px-3 py-1 rounded-none uppercase">
                           {phase.week}
                         </span>
                       </div>
@@ -99,7 +99,7 @@ export function Timeline() {
                     <motion.div
                       animate={{ rotate: expanded === i ? 45 : 0 }}
                       transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-                      className="flex-shrink-0 w-8 h-8 rounded-full bg-bg-elevated flex items-center justify-center text-text-muted text-lg"
+                      className="flex-shrink-0 w-8 h-8 rounded-none bg-bg-elevated flex items-center justify-center text-text-muted text-lg"
                     >
                       +
                     </motion.div>

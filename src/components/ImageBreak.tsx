@@ -14,7 +14,7 @@ export function ImageBreak({
   return (
     <ScrollReveal variant="scaleIn" className="py-8">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="relative aspect-[21/9] rounded-2xl overflow-hidden">
+        <div className="relative aspect-[21/9] rounded-none overflow-hidden">
           <img
             src={src}
             alt={alt}

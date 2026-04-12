@@ -41,7 +41,7 @@ export function WelcomeModal() {
             className="relative w-full max-w-md"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="bg-[#0a0a0a] border border-[#1a1a1a] rounded-2xl overflow-hidden">
+            <div className="bg-[#0a0a0a] border border-[#1a1a1a] rounded-none overflow-hidden">
               {/* Logo area */}
               <div className="flex items-center justify-center py-12 border-b border-[#111]">
                 <img
@@ -78,7 +78,7 @@ export function WelcomeModal() {
                   ].map((item) => (
                     <div
                       key={item.label}
-                      className="text-center py-4 px-2 border border-[#1a1a1a] rounded-lg"
+                      className="text-center py-4 px-2 border border-[#1a1a1a] rounded-none"
                     >
                       <div className="text-[13px] font-semibold text-[#e8e8e8] mb-1">
                         {item.label}
@@ -95,7 +95,7 @@ export function WelcomeModal() {
                   href="https://learn.waviboy.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full text-center py-3.5 bg-[#e8e8e8] text-[#0a0a0a] text-[12px] font-semibold tracking-[0.1em] uppercase rounded-lg hover:bg-white transition-colors duration-300"
+                  className="block w-full text-center py-3.5 bg-[#e8e8e8] text-[#0a0a0a] text-[12px] font-semibold tracking-[0.1em] uppercase rounded-none hover:bg-white transition-colors duration-300"
                 >
                   Learn More
                 </a>

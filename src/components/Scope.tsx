@@ -28,7 +28,7 @@ export function Scope() {
         <div className="grid md:grid-cols-2 gap-6">
           <ScrollReveal delay={0.1} variant="slideRight">
             <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card-hover rounded-2xl p-10 h-full hover:bg-[#222] transition-all duration-500">
+              <div className="card frame bg-bg-card-hover rounded-none p-10 h-full hover:bg-[#222] transition-all duration-500">
                 <div className="flex items-center gap-3 mb-10">
                   <div className="w-2 h-2 rounded-full bg-success" />
                   <h3 className="text-[16px] font-semibold tracking-[-0.01em]">Included</h3>
@@ -52,7 +52,7 @@ export function Scope() {
 
           <ScrollReveal delay={0.25} variant="slideLeft">
             <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card-hover rounded-2xl p-10 h-full hover:bg-[#222] transition-all duration-500">
+              <div className="card frame bg-bg-card-hover rounded-none p-10 h-full hover:bg-[#222] transition-all duration-500">
                 <div className="flex items-center gap-3 mb-10">
                   <div className="w-2 h-2 rounded-full bg-text-muted/30" />
                   <h3 className="text-[16px] font-semibold text-text-muted tracking-[-0.01em]">Not Included</h3>

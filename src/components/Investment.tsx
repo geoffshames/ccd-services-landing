@@ -42,7 +42,7 @@ export function Investment() {
           {/* Line items */}
           <ScrollReveal delay={0.1} variant="slideRight" className="lg:col-span-3">
             <TiltCard className="group">
-              <div className="card frame bg-bg-card rounded-2xl overflow-hidden hover:bg-bg-card-hover transition-all duration-500">
+              <div className="card frame bg-bg-card rounded-none overflow-hidden hover:bg-bg-card-hover transition-all duration-500">
                 <div className="px-10 py-6 border-b border-border">
                   <span className="text-[10px] font-mono tracking-[0.2em] text-text-muted uppercase">
                     Breakdown
@@ -100,7 +100,7 @@ export function Investment() {
           {/* Payment schedule */}
           <ScrollReveal delay={0.25} variant="slideLeft" className="lg:col-span-2">
             <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-2xl p-10 h-full flex flex-col hover:bg-bg-card-hover transition-all duration-500">
+              <div className="card frame bg-bg-card rounded-none p-10 h-full flex flex-col hover:bg-bg-card-hover transition-all duration-500">
                 <span className="text-[10px] font-mono tracking-[0.2em] text-text-muted uppercase mb-10">
                   Payment Schedule
                 </span>
@@ -112,7 +112,7 @@ export function Investment() {
                         <div className="absolute left-[15px] top-12 w-px h-[calc(100%+20px)] bg-border" />
                       )}
                       <div className="flex items-start gap-5">
-                        <div className="flex-shrink-0 w-8 h-8 rounded-full border border-accent/20 flex items-center justify-center z-10 bg-bg-card">
+                        <div className="flex-shrink-0 w-8 h-8 rounded-none border border-accent/20 flex items-center justify-center z-10 bg-bg-card">
                           <span className="text-[10px] font-mono text-accent">{i + 1}</span>
                         </div>
                         <div className="flex-1 pt-0.5">
@@ -134,7 +134,7 @@ export function Investment() {
                     href={q.paymentLink}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="block w-full text-center bg-accent text-bg font-semibold text-[14px] py-4 rounded-xl tracking-[-0.01em]"
+                    className="block w-full text-center bg-accent text-bg font-semibold text-[14px] py-4 rounded-none tracking-[-0.01em]"
                   >
                     Approve & Pay {formatCurrency(q.paymentSchedule[0].amount)}
                   </motion.a>

@@ -35,7 +35,7 @@ export function Deliverables() {
               src={PROJECT.images.product}
               alt="Product visualization example"
               caption="Visual Asset Example"
-              className="aspect-[4/3] rounded-2xl"
+              className="aspect-[4/3] rounded-none"
             />
           </div>
         </div>
@@ -51,7 +51,7 @@ export function Deliverables() {
         <StaggerContainer className="grid md:grid-cols-12 gap-5 mb-24" staggerDelay={0.1}>
           <StaggerItem className="md:col-span-7" variant="scaleIn">
             <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-2xl p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
+              <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
                 <div className="flex items-start justify-between mb-5">
                   <h4 className="text-[22px] font-bold text-text-primary tracking-[-0.01em] group-hover:text-accent transition-colors duration-500">
                     {creative.items[0].name}
@@ -67,7 +67,7 @@ export function Deliverables() {
 
           <StaggerItem className="md:col-span-5" variant="scaleIn">
             <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-2xl p-10 hover:bg-bg-card-hover transition-all duration-500 h-full flex flex-col justify-between">
+              <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full flex flex-col justify-between">
                 <span className="text-[11px] font-mono text-accent tracking-[0.1em]">{creative.items[1].quantity.toUpperCase()}</span>
                 <div className="mt-6">
                   <h4 className="text-[18px] font-bold text-text-primary mb-2 group-hover:text-accent transition-colors duration-500">{creative.items[1].name}</h4>
@@ -79,7 +79,7 @@ export function Deliverables() {
 
           <StaggerItem className="md:col-span-5" variant="scaleIn">
             <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-2xl p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
+              <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
                 <span className="text-[11px] font-mono text-accent/60 tracking-[0.1em] block mb-5">{creative.items[2].quantity.toUpperCase()}</span>
                 <h4 className="text-[18px] font-bold text-text-primary mb-2 group-hover:text-accent transition-colors duration-500">{creative.items[2].name}</h4>
                 <p className="text-[15px] text-text-muted leading-[1.7]">{creative.items[2].description}</p>
@@ -89,7 +89,7 @@ export function Deliverables() {
 
           <StaggerItem className="md:col-span-7" variant="scaleIn">
             <TiltCard className="group h-full">
-              <div className="bg-white/[0.05] border border-white/[0.08] rounded-2xl p-10 hover:bg-white/[0.08] transition-all duration-500 h-full flex items-center gap-10">
+              <div className="bg-white/[0.05] border border-white/[0.08] rounded-none p-10 hover:bg-white/[0.08] transition-all duration-500 h-full flex items-center gap-10">
                 <span className="text-[56px] font-light text-accent/15 leading-none tracking-[-0.04em]">{creative.icon}</span>
                 <div>
                   <h4 className="text-[18px] font-bold text-text-primary mb-2 group-hover:text-accent transition-colors duration-500">{creative.items[3].name}</h4>
@@ -111,7 +111,7 @@ export function Deliverables() {
         <StaggerContainer className="grid md:grid-cols-12 gap-5 mb-24" staggerDelay={0.1}>
           <StaggerItem className="md:col-span-12" variant="scaleIn">
             <TiltCard className="group">
-              <div className="bg-gradient-to-r from-white/[0.06] to-white/[0.03] border border-white/[0.08] rounded-2xl p-12 hover:from-white/[0.09] hover:to-white/[0.05] transition-all duration-500 flex flex-col md:flex-row md:items-center gap-10">
+              <div className="bg-gradient-to-r from-white/[0.06] to-white/[0.03] border border-white/[0.08] rounded-none p-12 hover:from-white/[0.09] hover:to-white/[0.05] transition-all duration-500 flex flex-col md:flex-row md:items-center gap-10">
                 <div className="text-[64px] font-light text-accent/20 leading-none tracking-[-0.04em] group-hover:text-accent/35 transition-colors">5</div>
                 <div className="flex-1">
                   <h4 className="text-[20px] font-semibold text-text-primary mb-3 tracking-[-0.01em] group-hover:text-accent transition-colors duration-500">{hero.items[0].name}</h4>
@@ -123,7 +123,7 @@ export function Deliverables() {
 
           <StaggerItem className="md:col-span-6" variant="scaleIn">
             <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-2xl p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
+              <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
                 <span className="text-[11px] font-mono text-accent/60 tracking-[0.1em] block mb-5">{hero.items[1].quantity.toUpperCase()}</span>
                 <h4 className="text-[18px] font-bold text-text-primary mb-2 group-hover:text-accent transition-colors duration-500">{hero.items[1].name}</h4>
                 <p className="text-[15px] text-text-muted leading-[1.7]">{hero.items[1].description}</p>
@@ -133,7 +133,7 @@ export function Deliverables() {
 
           <StaggerItem className="md:col-span-6" variant="scaleIn">
             <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-2xl p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
+              <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
                 <span className="text-[11px] font-mono text-accent/60 tracking-[0.1em] block mb-5">{hero.items[2].quantity.toUpperCase()}</span>
                 <h4 className="text-[18px] font-bold text-text-primary mb-2 group-hover:text-accent transition-colors duration-500">{hero.items[2].name}</h4>
                 <p className="text-[15px] text-text-muted leading-[1.7]">{hero.items[2].description}</p>
@@ -153,7 +153,7 @@ export function Deliverables() {
         <StaggerContainer className="grid md:grid-cols-12 gap-5 mb-24" staggerDelay={0.1}>
           <StaggerItem className="md:col-span-8" variant="scaleIn">
             <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-2xl p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
+              <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
                 <div className="flex items-start justify-between mb-5">
                   <h4 className="text-[22px] font-bold text-text-primary tracking-[-0.01em] group-hover:text-accent transition-colors duration-500">
                     {social.items[0].name}
@@ -167,7 +167,7 @@ export function Deliverables() {
 
           <StaggerItem className="md:col-span-4" variant="scaleIn">
             <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-2xl p-10 hover:bg-bg-card-hover transition-all duration-500 h-full flex flex-col justify-between">
+              <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full flex flex-col justify-between">
                 <span className="text-[11px] font-mono text-accent tracking-[0.1em]">{social.items[1].quantity.toUpperCase()}</span>
                 <div className="mt-6">
                   <h4 className="text-[18px] font-bold text-text-primary mb-2 group-hover:text-accent transition-colors duration-500">{social.items[1].name}</h4>
@@ -179,7 +179,7 @@ export function Deliverables() {
 
           <StaggerItem className="md:col-span-5" variant="scaleIn">
             <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-2xl p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
+              <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
                 <span className="text-[11px] font-mono text-accent/60 tracking-[0.1em] block mb-5">{social.items[2].quantity.toUpperCase()}</span>
                 <h4 className="text-[18px] font-bold text-text-primary mb-2 group-hover:text-accent transition-colors duration-500">{social.items[2].name}</h4>
                 <p className="text-[15px] text-text-muted leading-[1.7]">{social.items[2].description}</p>
@@ -189,7 +189,7 @@ export function Deliverables() {
 
           <StaggerItem className="md:col-span-7" variant="scaleIn">
             <TiltCard className="group h-full">
-              <div className="bg-white/[0.05] border border-white/[0.08] rounded-2xl p-10 hover:bg-white/[0.08] transition-all duration-500 h-full flex items-center gap-10">
+              <div className="bg-white/[0.05] border border-white/[0.08] rounded-none p-10 hover:bg-white/[0.08] transition-all duration-500 h-full flex items-center gap-10">
                 <span className="text-[56px] font-light text-accent/15 leading-none tracking-[-0.04em]">2</span>
                 <div>
                   <h4 className="text-[18px] font-bold text-text-primary mb-2 group-hover:text-accent transition-colors duration-500">{social.items[3].name}</h4>
@@ -212,7 +212,7 @@ export function Deliverables() {
           {presentation.items.map((item, i) => (
             <StaggerItem key={i} variant="scaleIn">
               <TiltCard className="group h-full">
-                <div className={`rounded-2xl p-10 h-full transition-all duration-500 ${
+                <div className={`rounded-none p-10 h-full transition-all duration-500 ${
                   i === 0
                     ? "bg-white/[0.05] border border-white/[0.08] hover:bg-white/[0.08]"
                     : "card frame bg-bg-card hover:bg-bg-card-hover"

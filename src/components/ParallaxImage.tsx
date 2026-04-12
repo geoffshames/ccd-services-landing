@@ -35,7 +35,7 @@ export function ParallaxImage({
       <div className="absolute inset-0 bg-gradient-to-t from-bg/50 via-transparent to-bg/20 pointer-events-none" />
       {caption && (
         <div className="absolute bottom-4 left-4">
-          <span className="text-[10px] font-mono tracking-[0.15em] text-white/50 uppercase bg-bg/40 backdrop-blur-sm px-3 py-1 rounded-full">
+          <span className="text-[10px] font-mono tracking-[0.15em] text-white/50 uppercase bg-bg/40 backdrop-blur-sm px-3 py-1 rounded-none">
             {caption}
           </span>
         </div>

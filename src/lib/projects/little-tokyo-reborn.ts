@@ -4,7 +4,7 @@ export const littleTokyoReborn: ProjectData = {
   accentColor: "#E63946",
 
   client: {
-    name: "Little Tokyo",
+    name: "Little Tokyo x VERDY",
     logo: "",
     contactName: "TBD",
     contactRole: "TBD",

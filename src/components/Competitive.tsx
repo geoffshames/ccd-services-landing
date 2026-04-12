@@ -18,7 +18,7 @@ export function Competitive() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-16">
           {PROJECT.competitive.competitors.map((comp, i) => (
             <ScrollReveal key={i}>
-              <motion.div className="card frame bg-bg-card rounded-2xl p-8 h-full transition-all duration-300" whileHover={{ y: -2, transition: { duration: 0.2 } }}>
+              <motion.div className="card frame bg-bg-card rounded-none p-8 h-full transition-all duration-300" whileHover={{ y: -2, transition: { duration: 0.2 } }}>
                 <p className="text-text-primary font-bold text-lg mb-2">{comp.name}</p>
                 {comp.strength && <p className="text-text-muted/70 text-sm mb-3"><span className="text-accent/70 font-mono text-xs mr-2">STRENGTH</span>{comp.strength}</p>}
                 <p className="text-text-muted text-sm"><span className="text-accent font-mono text-xs mr-2">GAP</span>{comp.gap}</p>

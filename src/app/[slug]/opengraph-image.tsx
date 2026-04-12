@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { getProject } from "@/lib/projects";
 
 export const runtime = "nodejs";
-export const alt = "Project Proposal";
+export const alt = "Crowd Control Digital — Project Proposal";
 export const size = {
   width: 1200,
   height: 630,
@@ -65,7 +65,7 @@ export default async function Image({ params }: { params: { slug: string } }) {
             style={{
               width: "12px",
               height: "12px",
-              borderRadius: "50%",
+              borderRadius: "0",
               backgroundColor: project.accentColor,
             }}
           />

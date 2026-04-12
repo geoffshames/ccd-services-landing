@@ -18,7 +18,7 @@ export function Targets() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-16">
           {PROJECT.targets.map((target, i) => (
             <ScrollReveal key={i}>
-              <motion.div className={`rounded-2xl p-8 h-full transition-all duration-300 ${i === 0 ? "bg-white/[0.06] border border-white/[0.10]" : "card frame bg-bg-card"}`} whileHover={{ y: -2, transition: { duration: 0.2 } }}>
+              <motion.div className={`rounded-none p-8 h-full transition-all duration-300 ${i === 0 ? "bg-white/[0.06] border border-white/[0.10]" : "card frame bg-bg-card"}`} whileHover={{ y: -2, transition: { duration: 0.2 } }}>
                 <div className="flex items-baseline gap-4 mb-3">
                   <span className="text-[clamp(2rem,4vw,3rem)] font-bold text-accent leading-none">{target.value}</span>
                   <span className="text-text-primary font-medium text-lg">{target.metric}</span>

@@ -21,9 +21,9 @@ export function Discovery() {
             const spans = ["md:col-span-7", "md:col-span-5", "md:col-span-5", "md:col-span-7", "md:col-span-6"];
             return (
               <ScrollReveal key={i} className={spans[i % spans.length]}>
-                <motion.div className={`group relative rounded-2xl p-8 h-full transition-all duration-300 ${i === 0 ? "bg-white/[0.06] border border-white/[0.10]" : "card frame bg-bg-card"}`} whileHover={{ y: -2, transition: { duration: 0.2 } }}>
+                <motion.div className={`group relative rounded-none p-8 h-full transition-all duration-300 ${i === 0 ? "bg-white/[0.06] border border-white/[0.10]" : "card frame bg-bg-card"}`} whileHover={{ y: -2, transition: { duration: 0.2 } }}>
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="text-xs font-mono text-accent/70 tracking-[0.15em] uppercase bg-white/[0.07] px-3 py-1 rounded-full">{insight.label}</span>
+                    <span className="text-xs font-mono text-accent/70 tracking-[0.15em] uppercase bg-white/[0.07] px-3 py-1 rounded-none">{insight.label}</span>
                     {insight.source && <span className="text-xs font-mono text-text-muted/60 tracking-wider">{insight.source}</span>}
                   </div>
                   <p className="text-text-primary text-base md:text-lg leading-relaxed">{insight.finding}</p>
