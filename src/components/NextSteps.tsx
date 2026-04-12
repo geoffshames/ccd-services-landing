@@ -6,6 +6,15 @@ import { ScrollReveal, StaggerContainer, StaggerItem } from "./ScrollReveal";
 import { SectionLabel } from "./SectionLabel";
 import { TiltCard } from "./TiltCard";
 
+// Grid layout pattern for next steps — cycles for any number of steps
+const GRID_PATTERN = [
+  { span: "md:col-span-7", variant: "slideRight" as const },
+  { span: "md:col-span-5", variant: "slideLeft" as const },
+  { span: "md:col-span-5", variant: "scaleIn" as const },
+  { span: "md:col-span-7", variant: "scaleIn" as const },
+  { span: "md:col-span-12", variant: "scaleIn" as const },
+];
+
 export function NextSteps() {
   const PROJECT = useProject();
   const steps = PROJECT.nextSteps;
@@ -26,72 +35,28 @@ export function NextSteps() {
         </ScrollReveal>
 
         <StaggerContainer className="grid md:grid-cols-12 gap-4" staggerDelay={0.1}>
-          {/* Step 1 - wide */}
-          <StaggerItem className="md:col-span-7" variant="slideRight">
-            <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-none p-7 hover:bg-bg-card-hover transition-all duration-500 h-full">
-                <div className="flex items-start gap-5">
-                  <div className="w-12 h-12 rounded-none bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:scale-105 transition-all duration-500">
-                    <span className="text-lg font-mono text-accent group-hover:text-bg transition-colors duration-500 font-bold">1</span>
+          {steps.map((step, i) => {
+            const layout = GRID_PATTERN[i % GRID_PATTERN.length];
+            return (
+              <StaggerItem key={i} className={layout.span} variant={layout.variant}>
+                <TiltCard className="group h-full">
+                  <div className="card frame bg-bg-card rounded-none p-7 hover:bg-bg-card-hover transition-all duration-500 h-full">
+                    <div className="flex items-start gap-5">
+                      <div className="w-10 h-10 rounded-none bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:scale-105 transition-all duration-500">
+                        <span className="text-[15px] font-mono text-accent group-hover:text-bg transition-colors duration-500 font-bold">
+                          {String(step.step).padStart(2, "0")}
+                        </span>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <h3 className="text-[17px] font-semibold text-text-primary mb-2 tracking-[-0.01em]">{step.title}</h3>
+                        <p className="text-[14px] text-text-muted leading-relaxed">{step.description}</p>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-[17px] font-semibold text-text-primary mb-2">{steps[0].title}</h3>
-                    <p className="text-[14px] text-text-muted leading-relaxed">{steps[0].description}</p>
-                  </div>
-                </div>
-              </div>
-            </TiltCard>
-          </StaggerItem>
-
-          {/* Step 2 - narrow */}
-          <StaggerItem className="md:col-span-5" variant="slideLeft">
-            <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-none p-6 hover:bg-bg-card-hover transition-all duration-500 h-full flex flex-col justify-center">
-                <span className="text-[11px] font-mono text-accent/60 mb-3">Step 2</span>
-                <h3 className="text-[15px] font-semibold text-text-primary mb-1">{steps[1].title}</h3>
-                <p className="text-[13px] text-text-muted leading-relaxed">{steps[1].description}</p>
-              </div>
-            </TiltCard>
-          </StaggerItem>
-
-          {/* Step 3 - narrow */}
-          <StaggerItem className="md:col-span-4" variant="scaleIn">
-            <TiltCard className="group h-full">
-              <div className="card frame bg-bg-card rounded-none p-6 hover:bg-bg-card-hover transition-all duration-500 h-full flex flex-col justify-center">
-                <span className="text-[11px] font-mono text-accent/60 mb-3">Step 3</span>
-                <h3 className="text-[15px] font-semibold text-text-primary mb-1">{steps[2].title}</h3>
-                <p className="text-[13px] text-text-muted leading-relaxed">{steps[2].description}</p>
-              </div>
-            </TiltCard>
-          </StaggerItem>
-
-          {/* Step 4 - wide accent */}
-          <StaggerItem className="md:col-span-8" variant="scaleIn">
-            <TiltCard className="group h-full">
-              <div className="bg-white/[0.07] border border-white/[0.12] rounded-none p-7 hover:bg-white/[0.10] hover:border-white/[0.20] transition-all duration-500 h-full flex items-center gap-6">
-                <div className="text-[48px] font-bold text-accent/20 leading-none group-hover:text-accent/40 transition-colors">04</div>
-                <div>
-                  <h3 className="text-[17px] font-semibold text-text-primary mb-1">{steps[3].title}</h3>
-                  <p className="text-[14px] text-text-muted leading-relaxed">{steps[3].description}</p>
-                </div>
-              </div>
-            </TiltCard>
-          </StaggerItem>
-
-          {/* Step 5 - full width */}
-          <StaggerItem className="md:col-span-12" variant="scaleIn">
-            <TiltCard className="group">
-              <div className="card frame bg-bg-card rounded-none p-7 hover:bg-bg-card-hover transition-all duration-500 flex items-center gap-6">
-                <div className="w-12 h-12 rounded-none bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:scale-105 transition-all duration-500">
-                  <span className="text-lg font-mono text-accent group-hover:text-bg transition-colors duration-500 font-bold">5</span>
-                </div>
-                <div>
-                  <h3 className="text-[17px] font-semibold text-text-primary mb-1">{steps[4].title}</h3>
-                  <p className="text-[14px] text-text-muted leading-relaxed">{steps[4].description}</p>
-                </div>
-              </div>
-            </TiltCard>
-          </StaggerItem>
+                </TiltCard>
+              </StaggerItem>
+            );
+          })}
         </StaggerContainer>
 
         {/* Contact CTA */}
