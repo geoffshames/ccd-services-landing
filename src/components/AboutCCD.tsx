@@ -6,12 +6,12 @@ import { SectionLabel } from "./SectionLabel";
 
 const CASE_STUDIES = [
   {
-    client: "bbno$",
+    client: "BBNO$",
     metric: "150K+",
     description: "TIKTOK CREATES",
   },
   {
-    client: "Peso Pluma",
+    client: "PESO PLUMA",
     metric: "700M+",
     description: "SPOTIFY STREAMS GENERATED",
   },
@@ -21,9 +21,9 @@ const CASE_STUDIES = [
     description: "SPOTIFY STREAMS GENERATED",
   },
   {
-    client: "Illenium",
+    client: "ILLENIUM",
     metric: "150K+",
-    description: "TICKETS SOLD ACROSS NORTH AMERICA",
+    description: "TICKETS SOLD",
   },
 ];
 
