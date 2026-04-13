@@ -14,6 +14,7 @@ import { Scope } from "@/components/Scope";
 import { Investment } from "@/components/Investment";
 import { NextSteps } from "@/components/NextSteps";
 import { Footer } from "@/components/Footer";
+import { AboutCCD } from "@/components/AboutCCD";
 import { ImageBreak } from "@/components/ImageBreak";
 import { CursorGlow } from "@/components/CursorGlow";
 
@@ -47,6 +48,7 @@ export function ProposalClient({ project }: { project: ProjectData }) {
         <Scope />
         <Investment />
         <NextSteps />
+        <AboutCCD />
         <Footer />
       </main>
     </ProjectProvider>

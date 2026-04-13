@@ -236,30 +236,31 @@ export const ykNiece: ProjectData = {
 
   competitive: {
     summary:
-      "The rising female rap space is increasingly competitive, with artists at YK Niece's streaming tier rapidly professionalizing their digital marketing. The window to build infrastructure around her momentum is narrowing.",
+      "YK Niece sits at 3.1M Spotify monthly listeners with zero paid marketing infrastructure. Among rising female rappers in the same ATL ecosystem, artists with comparable or smaller audiences are already running structured campaigns, building owned channels, and converting streams into revenue. The data makes the gap clear — and the window to close it is narrowing.",
     competitors: [
       {
-        name: "Anycia",
-        gap: "Anycia has deeper discography and more established marketing infrastructure, but YK Niece has higher streaming velocity and bigger co-signs (Metro Boomin, Lizzo). CCD closes the infrastructure gap while the momentum advantage holds.",
+        name: "BunnaB — 3.2M Monthly Listeners",
         strength:
-          "Consistent release cadence with marketing support behind each drop",
+          "Went from 8K to 3.2M Spotify listeners in under 12 months. Debut project Ice Cream Summer backed by a sold-out HBCU tour, Metro Boomin collab, Kai Cenat premiere on Mafiathon, and an NBA YoungBoy stage appearance at Crypto.com Arena. Co-signs from Playboi Carti and Charli D\u2019Amelio.",
+        gap: "BunnaB is the same age (22), same city (ATL), and at the same streaming tier — but she already has tour infrastructure, a structured release cadence, and high-profile media moments driving sustained growth. YK Niece\u2019s peaks are higher (Billboard Hot 100), but BunnaB\u2019s floor is higher because of consistent marketing support between releases.",
       },
       {
-        name: "PLUTO",
-        gap: "Similar streaming tier and TikTok presence, but PLUTO has a stronger YouTube strategy and more structured content calendar. YK Niece's cultural moment is bigger — she needs the system to sustain it.",
-        strength: "Active YouTube presence with regular music video releases",
+        name: "Monaleo — 1.9M Monthly Listeners",
+        strength:
+          "1.9M Spotify listeners with consistent paid media and content strategy. Active touring schedule through 2026, structured YouTube rollouts for every single, and a content calendar that keeps her visible between release windows.",
+        gap: "Monaleo has fewer monthly listeners than YK Niece but is converting them more efficiently — active tour dates, merch infrastructure, and a content engine running year-round. Without a marketing layer, YK Niece risks being outpaced by artists with smaller audiences but better systems.",
       },
       {
-        name: "BunnaB",
-        gap: "Comparable metrics but BunnaB maintains a more consistent release strategy with marketing support. YK Niece's peak moments are higher, but the valleys between releases are deeper.",
+        name: "Anycia — 485K Monthly Listeners",
         strength:
-          "Steady content output and structured rollout cadence between releases",
+          "Established ATL rapper with label support, touring history (Veeze tour 2023, Slangfest), and a consistent release cadence since her debut single in Sept 2022. EP \u201CEXTRA\u201D (2023) showed structured rollout execution.",
+        gap: "Anycia is at one-sixth of YK Niece\u2019s streaming audience — but has more developed marketing infrastructure. She\u2019s a cautionary benchmark: consistent release strategy without a viral breakout moment. YK Niece has the moment but not the system. The risk is ending up with Anycia-level infrastructure despite having 6\u00D7 the audience.",
       },
       {
-        name: "Bankroll Ni",
-        gap: "Earlier career stage but building digital infrastructure faster. If YK Niece doesn't invest now, artists like Bankroll Ni will outpace her despite having less cultural capital.",
+        name: "Bankroll Ni — 336K Monthly Listeners",
         strength:
-          "Early investment in digital marketing infrastructure and fan community building",
+          "Viral TikTok hit \u201CI\u2019m So ATL\u201D (2025) drove a surge past 1M monthly listeners at peak. First single \u201CBig Mad\u201D dropped in 2020 — she\u2019s been building for years and is now capitalizing on a viral moment with marketing support.",
+        gap: "Bankroll Ni peaked at 1M+ listeners on one viral TikTok moment and has since settled back to 336K — a textbook example of what happens when a viral spike isn\u2019t supported by paid amplification and retention infrastructure. YK Niece\u2019s WHIM WHAMIEE moment was bigger (#51 Billboard Hot 100), but without the infrastructure to sustain it, the trajectory risk is the same.",
       },
     ],
   },
