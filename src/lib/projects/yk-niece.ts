@@ -43,14 +43,15 @@ export const ykNiece: ProjectData = {
     imageCaption: "Full-Service Digital Marketing",
     stats: [
       {
-        value: 4,
-        label: "Workstreams",
+        value: 100,
+        suffix: "+",
+        label: "Creator Content Pieces",
         description:
-          "Full-stack digital marketing from paid media to owned audience infrastructure",
+          "UGC and influencer content seeded across TikTok, Instagram, and YouTube over the campaign",
       },
-      { value: 6, label: "Month Engagement" },
-      { value: 3, label: "Ad Platforms" },
-      { value: 24, label: "Weekly Reports" },
+      { value: 5, suffix: "M+", label: "Target Listeners" },
+      { value: 25, suffix: "K+", label: "Subscribers Built" },
+      { value: 6, label: "Month Campaign" },
     ],
   },
 
