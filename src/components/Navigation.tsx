@@ -73,10 +73,10 @@ export function Navigation() {
             </div>
 
             <a
-              href="#investment"
+              href="#next-steps"
               className="hidden md:block text-[11px] font-mono tracking-[0.1em] uppercase text-bg bg-accent px-5 py-2 hover:bg-accent/90 transition-colors"
             >
-              Approve
+              Contact
             </a>
 
             {/* Mobile hamburger */}
