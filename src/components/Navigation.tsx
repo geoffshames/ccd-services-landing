@@ -9,7 +9,6 @@ const NAV_ITEMS = [
   { label: "Timeline", href: "#timeline" },
   { label: "Deliverables", href: "#deliverables" },
   { label: "Scope", href: "#scope" },
-  { label: "Investment", href: "#investment" },
 ];
 
 export function Navigation() {
