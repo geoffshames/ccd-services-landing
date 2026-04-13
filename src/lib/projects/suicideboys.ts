@@ -418,7 +418,7 @@ export const suicideboys: ProjectData = {
       },
     ],
     paymentTerms: "Net 7 from invoice",
-    paymentLink: "#",
+    paymentLink: "https://buy.stripe.com/00w5kCdq4dn3bzb2Fja7C07",
   },
 
   nextSteps: [
