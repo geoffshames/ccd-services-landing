@@ -19,7 +19,7 @@ export const ykNiece: ProjectData = {
   project: {
     name: "The Breakout Blueprint",
     tagline:
-      "A Billboard Hot 100 hit, Metro Boomin co-signs, and a debut album on deck \u2014 the viral moments are here. Now build the machine that makes sure none of them go to waste.",
+      "A Billboard Hot 100 hit, Metro Boomin co-signs, and a debut album on deck — the viral moments are here. Now build the machine that makes sure none of them go to waste.",
     type: "Full-Service Digital Marketing",
     startDate: "May 1, 2026",
     endDate: "October 31, 2026",
@@ -30,16 +30,16 @@ export const ykNiece: ProjectData = {
   overview: {
     heading: "The Strategy",
     summary:
-      "Crowd Control Digital will build and operate the full digital marketing infrastructure for YK Niece\u2019s debut album cycle and 2026 tour run. From paid media and creator marketing to email/SMS list building and merch reactivation, CCD creates the system that converts viral moments into measurable growth \u2014 streams, ticket sales, merch revenue, and a fanbase you actually own. YK Niece has the cultural momentum. What\u2019s missing is the engine that captures it, amplifies it, and compounds it over the most important six months of her career so far.",
+      "Crowd Control Digital will build and operate the full digital marketing infrastructure for YK Niece's debut album cycle and 2026 tour run. From paid media and creator marketing to email/SMS list building and merch reactivation, CCD creates the system that converts viral moments into measurable growth — streams, ticket sales, merch revenue, and a fanbase you actually own. YK Niece has the cultural momentum. What's missing is the engine that captures it, amplifies it, and compounds it over the most important six months of her career so far.",
     objectives: [
-      "Build a paid media machine across Meta, TikTok, and YouTube that amplifies every release, tour date, and cultural moment \u2014 targeting the 5M+ Spotify listener threshold by end of engagement",
-      "Launch email and SMS infrastructure from zero to 25K+ subscribers, creating an owned audience channel that doesn\u2019t depend on algorithms or platform reach",
+      "Build a paid media machine across Meta, TikTok, and YouTube that amplifies every release, tour date, and cultural moment — targeting the 5M+ Spotify listener threshold by end of engagement",
+      "Launch email and SMS infrastructure from zero to 25K+ subscribers, creating an owned audience channel that doesn't depend on algorithms or platform reach",
       "Execute 3+ creator marketing waves seeding music and content across TikTok and Instagram, generating 100+ pieces of UGC and influencer content",
       "Reactivate and optimize the merch/e-commerce ecosystem with a drop strategy timed to album milestones and tour dates",
-      "Deliver geo-targeted paid campaigns for every 2026 tour market \u2014 driving ticket sales and local awareness in Atlanta, Myrtle Beach, Birmingham, and New Orleans",
+      "Deliver geo-targeted paid campaigns for every 2026 tour market — driving ticket sales and local awareness in Atlanta, Myrtle Beach, Birmingham, and New Orleans",
     ],
     subtitle:
-      "Six months of full-stack digital marketing built around the debut album and 2026 tour \u2014 paid media, creator campaigns, owned audience, and merch infrastructure.",
+      "Six months of full-stack digital marketing built around the debut album and 2026 tour — paid media, creator campaigns, owned audience, and merch infrastructure.",
     imageCaption: "Full-Service Digital Marketing",
     stats: [
       {
@@ -58,72 +58,150 @@ export const ykNiece: ProjectData = {
   discovery: {
     heading: "What We Found",
     summary:
-      "Before proposing a single deliverable, we audited YK Niece\u2019s digital ecosystem, competitive landscape, and market position. The findings confirm what the numbers already suggest \u2014 this is an artist with elite-tier momentum and entry-level infrastructure.",
+      "Before proposing a single deliverable, we audited YK Niece's digital ecosystem, competitive landscape, and market position. The findings confirm what the numbers already suggest — this is an artist with elite-tier momentum and entry-level infrastructure.",
     insights: [
       {
         label: "Infrastructure Gap",
         finding:
-          "Despite Motown Records backing and co-signs from Metro Boomin, Quavo, Lizzo, Latto, and Sexyy Red \u2014 YK Niece has zero paid media campaigns running, no email or SMS list, and a dormant merch store. The gap between cultural capital and marketing infrastructure is massive.",
+          "Despite Motown Records backing and co-signs from Metro Boomin, Quavo, Lizzo, Latto, and Sexyy Red — YK Niece has zero paid media campaigns running, no email or SMS list, and a dormant merch store. The gap between cultural capital and marketing infrastructure is massive.",
         source: "Digital audit / Meta Ad Library",
       },
       {
         label: "Viral Without a Net",
         finding:
-          "WHIM WHAMIEE hit #51 on the Billboard Hot 100 with zero paid amplification. Every stream, every chart position was organic. A paid media layer on that kind of moment could have 3\u20135\u00D7 the reach and sustained the chart run weeks longer.",
+          "WHIM WHAMIEE hit #51 on the Billboard Hot 100 with zero paid amplification. Every stream, every chart position was organic. A paid media layer on that kind of moment could have 3–5× the reach and sustained the chart run weeks longer.",
         source: "Billboard / Meta Ad Library audit",
       },
       {
         label: "Remix Machine",
         finding:
-          "Lizzo, Latto, and Sexyy Red all jumped on WHIM WHAMIEE remixes \u2014 that\u2019s mainstream crossover validation that most artists at this stage would kill for. Each remix was a marketing moment that went uncaptured by paid or email campaigns.",
+          "Lizzo, Latto, and Sexyy Red all jumped on WHIM WHAMIEE remixes — that's mainstream crossover validation that most artists at this stage would kill for. Each remix was a marketing moment that went uncaptured by paid or email campaigns.",
         source: "Discography analysis / The FADER",
       },
       {
         label: "Tour Without Targeting",
         finding:
-          "YK Niece is headlining real venues in 2026 \u2014 Buckhead Theatre, House of Blues, Legacy Arena, Smoothie King Center \u2014 without geo-targeted paid campaigns in any of those markets. Ticket sales are running on organic reach alone.",
+          "YK Niece is headlining real venues in 2026 — Buckhead Theatre, House of Blues, Legacy Arena, Smoothie King Center — without geo-targeted paid campaigns in any of those markets. Ticket sales are running on organic reach alone.",
         source: "Ticketmaster / paid media audit",
       },
       {
         label: "The Album Window",
         finding:
-          "The debut album dropping in 2026 is a once-in-a-career moment. The 8\u201312 weeks before and after release are the highest-ROI period for marketing infrastructure investment \u2014 and that window is approaching fast.",
+          "The debut album dropping in 2026 is a once-in-a-career moment. The 8–12 weeks before and after release are the highest-ROI period for marketing infrastructure investment — and that window is approaching fast.",
         source: "Industry benchmarking / AJC",
       },
     ],
     marketContext:
-      "The female rap market is experiencing unprecedented commercial momentum \u2014 but it\u2019s also more crowded than ever. Artists who broke through in 2024\u201325 and didn\u2019t invest in digital marketing infrastructure are already losing ground to newer acts with better teams. YK Niece\u2019s Motown backing and Metro Boomin co-signs put her in a tier that demands professional marketing infrastructure. The album window makes the timing urgent.",
+      "The female rap market is experiencing unprecedented commercial momentum — but it's also more crowded than ever. Artists who broke through in 2024–25 and didn't invest in digital marketing infrastructure are already losing ground to newer acts with better teams. YK Niece's Motown backing and Metro Boomin co-signs put her in a tier that demands professional marketing infrastructure. The album window makes the timing urgent.",
   },
 
   audience: {
-    heading: "Who We\u2019re Reaching",
+    heading: "Who We're Reaching",
     summary:
-      "YK Niece\u2019s audience is TikTok-native, personality-driven, and fiercely loyal \u2014 but currently has no owned channel to deepen the connection beyond algorithm-dependent social feeds.",
+      "YK Niece's audience is TikTok-native, personality-driven, and fiercely loyal — but currently has no owned channel to deepen the connection beyond algorithm-dependent social feeds.",
     demographics:
-      "Core audience is 16\u201328, predominantly female, concentrated in the South (Atlanta, Houston, Charlotte, Memphis) with growing national reach. Urban and suburban, mobile-first, spending 2\u20134 hours daily on TikTok and Instagram. Music discovery happens almost exclusively through social platforms and playlist algorithms.",
+      "Core audience is 16–28, predominantly female, concentrated in the South with growing national reach.",
+    demographicCards: [
+      {
+        label: "Age Range",
+        value: "16–28 core",
+        detail: "18–22 peak engagement",
+      },
+      {
+        label: "Gender",
+        value: "78% female",
+        detail: "Strong female skew across platforms",
+      },
+      {
+        label: "Geography",
+        value: "Southern US",
+        detail: "Atlanta, Houston, Charlotte, Memphis",
+      },
+      {
+        label: "Behavior",
+        value: "Mobile-first",
+        detail: "2–4 hrs daily on TikTok & Instagram",
+      },
+    ],
+    personas: [
+      {
+        name: "The Day One",
+        ageRange: "18–24",
+        description:
+          "Found YK Niece before WHIM WHAMIEE blew up. Follows every post, comments first, and treats her success like a personal win. Wants merch, early access, and a way to prove they were there from the start.",
+        traits: ["Loyal Commenter", "Merch Buyer", "Story Sharer", "Street Team Energy"],
+      },
+      {
+        name: "The TikTok Discoverer",
+        ageRange: "16–22",
+        description:
+          "Heard WHIM WHAMIEE as a TikTok sound and went down the rabbit hole. Engages through duets, dance challenges, and sound reuse. Hasn't explored the full catalog yet — needs a content funnel to convert from casual listener to real fan.",
+        traits: ["Sound-First", "Algorithm-Fed", "Short Attention Span", "High Share Rate"],
+      },
+      {
+        name: "The Culture Tap-In",
+        ageRange: "22–28",
+        description:
+          "Plugged into the broader female rap ecosystem — follows Sexyy Red, Latto, GloRilla. Discovered YK Niece through the remix wave and co-sign network. Values authenticity, fashion, and personality over pure lyrics.",
+        traits: ["Multi-Artist", "Fashion-Conscious", "Playlist Curator", "Concert-Goer"],
+      },
+    ],
     psychographics: [
-      "Authenticity over polish \u2014 they follow artists who feel real, raw, and unfiltered. YK Niece\u2019s personality-driven content resonates because it doesn\u2019t feel manufactured",
-      "TikTok-first discovery \u2014 they find music through viral moments, sound trends, and creator content. A song doesn\u2019t exist until it\u2019s a TikTok sound",
-      "Visual identity matters as much as the music \u2014 aesthetic, fashion, and brand presentation are table stakes for their loyalty",
-      "Community over consumption \u2014 they want to feel like they discovered her, championed her, and are part of the come-up story",
+      "Authenticity over polish — they follow artists who feel real, raw, and unfiltered. YK Niece's personality-driven content resonates because it doesn't feel manufactured",
+      "TikTok-first discovery — they find music through viral moments, sound trends, and creator content. A song doesn't exist until it's a TikTok sound",
+      "Visual identity matters as much as the music — aesthetic, fashion, and brand presentation are table stakes for their loyalty",
+      "Community over consumption — they want to feel like they discovered her, championed her, and are part of the come-up story",
     ],
     painPoints: [
-      "Fans want more frequent releases and consistent content \u2014 the gaps between drops create anxiety about momentum stalling",
-      "No merch to buy \u2014 the store exists but there\u2019s nothing compelling or timed to moments that drive impulse purchases",
-      "YouTube is underutilized \u2014 fans want music videos, vlogs, behind-the-scenes content, and long-form personality moments",
-      "No direct communication channel \u2014 fans rely entirely on social algorithms to stay connected, which means they miss announcements and drops",
+      "Fans want more frequent releases and consistent content — the gaps between drops create anxiety about momentum stalling",
+      "No merch to buy — the store exists but there's nothing compelling or timed to moments that drive impulse purchases",
+      "YouTube is underutilized — fans want music videos, vlogs, behind-the-scenes content, and long-form personality moments",
+      "No direct communication channel — fans rely entirely on social algorithms to stay connected, which means they miss announcements and drops",
+    ],
+    purchaseTriggers: [
+      "Viral TikTok moments that create urgency and FOMO — the remix wave proved her music moves when the culture pushes it",
+      "Limited drops and exclusivity — merch, early access, or behind-the-scenes content gated by email signup or purchase",
+      "Album announcement + pre-save campaigns — the debut album is the single highest-conversion moment of her career so far",
+      "Tour ticket bundles with merch — concert-goers are the highest-LTV fans and will buy if given the right package",
+    ],
+    platforms: [
+      {
+        name: "TikTok",
+        description:
+          "Primary discovery and engagement platform. 721K followers. Content performs best when personality-driven and raw — not overly produced. Sound reuse and duets drive organic reach.",
+      },
+      {
+        name: "Instagram",
+        description:
+          "537K followers. Identity and lifestyle hub — fits, behind-the-scenes, personal moments. Reels underutilized relative to feed posts. Stories engagement is high but inconsistent.",
+      },
+      {
+        name: "Spotify",
+        description:
+          "3.1M monthly listeners. Streaming is the core metric for label and industry perception. Playlist placement and algorithmic radio are the primary drivers — paid campaigns can accelerate both.",
+      },
+      {
+        name: "YouTube",
+        description:
+          "Channel exists (@YKDaTrillest) but underutilized. Fans actively search for music videos and personality content here. Massive discovery opportunity through Shorts and long-form.",
+      },
+      {
+        name: "Twitter / X",
+        description:
+          "Lower priority but important for real-time cultural conversation, album rollout discourse, and journalist/tastemaker engagement during release windows.",
+      },
     ],
     quotes: [
       {
-        text: "She\u2019s so underrated, her flow is crazy but she needs to drop more consistently",
+        text: "She's so underrated, her flow is crazy but she needs to drop more consistently",
         source: "Reddit",
       },
       {
-        text: "WHIM WHAMIEE was everywhere but then she just went quiet \u2014 we need the album",
+        text: "WHIM WHAMIEE was everywhere but then she just went quiet — we need the album",
         source: "TikTok comments",
       },
       {
-        text: "Where\u2019s the merch? I would buy everything if she actually dropped something",
+        text: "Where's the merch? I would buy everything if she actually dropped something",
         source: "Instagram comments",
       },
     ],
@@ -134,7 +212,7 @@ export const ykNiece: ProjectData = {
       metric: "Spotify Monthly Listeners",
       value: "5M+",
       context:
-        "From 3.1M to 5M+ \u2014 driven by paid amplification of the album release, playlist pitching support via paid discovery campaigns, and sustained creator marketing that keeps her music in rotation across TikTok and Instagram.",
+        "From 3.1M to 5M+ — driven by paid amplification of the album release, playlist pitching support via paid discovery campaigns, and sustained creator marketing that keeps her music in rotation across TikTok and Instagram.",
     },
     {
       metric: "Email & SMS List",
@@ -144,7 +222,7 @@ export const ykNiece: ProjectData = {
     },
     {
       metric: "Paid Media ROAS",
-      value: "4\u00D7+",
+      value: "4×+",
       context:
         "Industry benchmark for music marketing on Meta and TikTok. Measured across stream-equivalent value, ticket sales attribution, and merch revenue from paid traffic.",
     },
@@ -152,13 +230,13 @@ export const ykNiece: ProjectData = {
       metric: "Creator Content Pieces",
       value: "100+",
       context:
-        "UGC and influencer content seeded across TikTok and Instagram through 3+ creator waves. Each wave targets different audience segments \u2014 music, lifestyle, fashion, and dance creators.",
+        "UGC and influencer content seeded across TikTok and Instagram through 3+ creator waves. Each wave targets different audience segments — music, lifestyle, fashion, and dance creators.",
     },
   ],
 
   competitive: {
     summary:
-      "The rising female rap space is increasingly competitive, with artists at YK Niece\u2019s streaming tier rapidly professionalizing their digital marketing. The window to build infrastructure around her momentum is narrowing.",
+      "The rising female rap space is increasingly competitive, with artists at YK Niece's streaming tier rapidly professionalizing their digital marketing. The window to build infrastructure around her momentum is narrowing.",
     competitors: [
       {
         name: "Anycia",
@@ -168,18 +246,18 @@ export const ykNiece: ProjectData = {
       },
       {
         name: "PLUTO",
-        gap: "Similar streaming tier and TikTok presence, but PLUTO has a stronger YouTube strategy and more structured content calendar. YK Niece\u2019s cultural moment is bigger \u2014 she needs the system to sustain it.",
+        gap: "Similar streaming tier and TikTok presence, but PLUTO has a stronger YouTube strategy and more structured content calendar. YK Niece's cultural moment is bigger — she needs the system to sustain it.",
         strength: "Active YouTube presence with regular music video releases",
       },
       {
         name: "BunnaB",
-        gap: "Comparable metrics but BunnaB maintains a more consistent release strategy with marketing support. YK Niece\u2019s peak moments are higher, but the valleys between releases are deeper.",
+        gap: "Comparable metrics but BunnaB maintains a more consistent release strategy with marketing support. YK Niece's peak moments are higher, but the valleys between releases are deeper.",
         strength:
           "Steady content output and structured rollout cadence between releases",
       },
       {
         name: "Bankroll Ni",
-        gap: "Earlier career stage but building digital infrastructure faster. If YK Niece doesn\u2019t invest now, artists like Bankroll Ni will outpace her despite having less cultural capital.",
+        gap: "Earlier career stage but building digital infrastructure faster. If YK Niece doesn't invest now, artists like Bankroll Ni will outpace her despite having less cultural capital.",
         strength:
           "Early investment in digital marketing infrastructure and fan community building",
       },
@@ -188,52 +266,52 @@ export const ykNiece: ProjectData = {
 
   timelineHeading: "Campaign Roadmap",
   timelineSubheading:
-    "A focused 6-month engagement across three phases \u2014 from infrastructure build-out through album launch and tour amplification \u2014 designed to capture every high-value moment in YK Niece\u2019s breakout year.",
+    "A focused 6-month engagement across three phases — from infrastructure build-out through album launch and tour amplification — designed to capture every high-value moment in YK Niece's breakout year.",
   timelineImageCaption: "6 Months / 3 Phases / 4 Workstreams",
 
   timeline: [
     {
       phase: "Foundation & Infrastructure",
-      week: "Weeks 1\u20134",
+      week: "Weeks 1–4",
       date: "May 2026",
       status: "upcoming" as const,
       tasks: [
-        "Full digital ecosystem audit \u2014 social, streaming, merch, YouTube, competitive benchmarking",
-        "Paid media architecture \u2014 pixel installation, audience building, campaign structure across Meta, TikTok, and YouTube",
-        "Email/SMS platform setup (Klaviyo) \u2014 list architecture, welcome flows, segmentation strategy",
-        "Social strategy development \u2014 content pillars, posting cadence, platform-specific optimization plan",
-        "Creator marketing shortlist \u2014 identify and vet 50+ creators across music, lifestyle, fashion, and dance verticals",
-        "Merch store audit and optimization \u2014 product strategy, drop calendar, e-commerce UX improvements",
+        "Full digital ecosystem audit — social, streaming, merch, YouTube, competitive benchmarking",
+        "Paid media architecture — pixel installation, audience building, campaign structure across Meta, TikTok, and YouTube",
+        "Email/SMS platform setup (Klaviyo) — list architecture, welcome flows, segmentation strategy",
+        "Social strategy development — content pillars, posting cadence, platform-specific optimization plan",
+        "Creator marketing shortlist — identify and vet 50+ creators across music, lifestyle, fashion, and dance verticals",
+        "Merch store audit and optimization — product strategy, drop calendar, e-commerce UX improvements",
       ],
     },
     {
       phase: "Album Pre-Release Engine",
-      week: "Weeks 5\u201312",
-      date: "Jun \u2013 Jul 2026",
+      week: "Weeks 5–12",
+      date: "Jun – Jul 2026",
       status: "upcoming" as const,
       tasks: [
-        "Launch paid media campaigns \u2014 awareness and engagement across Meta, TikTok, and YouTube at $3\u20135K/mo spend",
-        "Execute first creator wave \u2014 seed singles and pre-release content to 30+ creators",
-        "Email/SMS list building \u2014 paid lead gen campaigns, merch incentive captures, landing page optimization",
-        "Content calendar execution \u2014 daily social management, platform-specific content, engagement optimization",
-        "First merch drop \u2014 timed to single release or album announcement, integrated with email/SMS and paid campaigns",
-        "YouTube optimization \u2014 channel audit, metadata strategy, thumbnail testing, content recommendations",
-        "Geo-targeted tour campaigns \u2014 early awareness builds in Atlanta, Myrtle Beach, Birmingham, New Orleans",
+        "Launch paid media campaigns — awareness and engagement across Meta, TikTok, and YouTube at $3–5K/mo spend",
+        "Execute first creator wave — seed singles and pre-release content to 30+ creators",
+        "Email/SMS list building — paid lead gen campaigns, merch incentive captures, landing page optimization",
+        "Content calendar execution — daily social management, platform-specific content, engagement optimization",
+        "First merch drop — timed to single release or album announcement, integrated with email/SMS and paid campaigns",
+        "YouTube optimization — channel audit, metadata strategy, thumbnail testing, content recommendations",
+        "Geo-targeted tour campaigns — early awareness builds in Atlanta, Myrtle Beach, Birmingham, New Orleans",
       ],
     },
     {
       phase: "Album Launch & Tour Amplification",
-      week: "Weeks 13\u201324",
-      date: "Aug \u2013 Oct 2026",
+      week: "Weeks 13–24",
+      date: "Aug – Oct 2026",
       status: "upcoming" as const,
       tasks: [
-        "Full-throttle album release campaign \u2014 surge paid spend, retargeting, lookalike audiences at peak momentum",
-        "Second and third creator waves \u2014 album tracks seeded to 70+ creators across TikTok and Instagram",
-        "Tour market geo-targeting \u2014 paid campaigns in each city 4\u20136 weeks before show dates, ticket sale retargeting",
-        "Album merch drop \u2014 coordinated release with email/SMS blasts, paid promotion, and creator seeding",
-        "Retargeting and retention \u2014 email/SMS nurture sequences, Spotify retargeting, abandoned cart recovery on merch",
-        "Monthly performance reporting and strategy optimization \u2014 pivot budget allocation based on what\u2019s converting",
-        "End-of-engagement impact report \u2014 full performance analysis across all workstreams with forward recommendations",
+        "Full-throttle album release campaign — surge paid spend, retargeting, lookalike audiences at peak momentum",
+        "Second and third creator waves — album tracks seeded to 70+ creators across TikTok and Instagram",
+        "Tour market geo-targeting — paid campaigns in each city 4–6 weeks before show dates, ticket sale retargeting",
+        "Album merch drop — coordinated release with email/SMS blasts, paid promotion, and creator seeding",
+        "Retargeting and retention — email/SMS nurture sequences, Spotify retargeting, abandoned cart recovery on merch",
+        "Monthly performance reporting and strategy optimization — pivot budget allocation based on what's converting",
+        "End-of-engagement impact report — full performance analysis across all workstreams with forward recommendations",
       ],
       ongoing: true,
     },
@@ -242,19 +320,19 @@ export const ykNiece: ProjectData = {
   deliverables: [
     {
       category: "Paid Media",
-      icon: "\u25CF",
+      icon: "●",
       items: [
         {
           name: "Meta Advertising",
           quantity: "6 months",
           description:
-            "Instagram and Facebook campaigns \u2014 awareness, engagement, stream conversion, ticket sales, and merch retargeting across the album and tour cycle",
+            "Instagram and Facebook campaigns — awareness, engagement, stream conversion, ticket sales, and merch retargeting across the album and tour cycle",
         },
         {
           name: "TikTok Advertising",
           quantity: "6 months",
           description:
-            "In-feed and Spark Ads campaigns targeting music discovery, sound usage, and creator amplification \u2014 the platform where YK Niece\u2019s audience lives",
+            "In-feed and Spark Ads campaigns targeting music discovery, sound usage, and creator amplification — the platform where YK Niece's audience lives",
         },
         {
           name: "YouTube Advertising",
@@ -266,25 +344,25 @@ export const ykNiece: ProjectData = {
           name: "Retargeting & Lookalikes",
           quantity: "Ongoing",
           description:
-            "Cross-platform retargeting of engaged users, website visitors, and email subscribers \u2014 plus lookalike audiences built from highest-value fan segments",
+            "Cross-platform retargeting of engaged users, website visitors, and email subscribers — plus lookalike audiences built from highest-value fan segments",
         },
       ],
     },
     {
       category: "Social Strategy & Content",
-      icon: "\u25B6",
+      icon: "▶",
       items: [
         {
           name: "Social Strategy",
           quantity: "1",
           description:
-            "Comprehensive platform strategy \u2014 content pillars, posting cadence, engagement tactics, and growth levers for Instagram, TikTok, YouTube, and X",
+            "Comprehensive platform strategy — content pillars, posting cadence, engagement tactics, and growth levers for Instagram, TikTok, YouTube, and X",
         },
         {
           name: "Content Calendar",
           quantity: "Monthly",
           description:
-            "Strategic content planning aligned to album milestones, tour dates, and cultural moments \u2014 with platform-specific formats and copy",
+            "Strategic content planning aligned to album milestones, tour dates, and cultural moments — with platform-specific formats and copy",
         },
         {
           name: "Platform Optimization",
@@ -302,19 +380,19 @@ export const ykNiece: ProjectData = {
     },
     {
       category: "Creator Marketing",
-      icon: "\u25C6",
+      icon: "◆",
       items: [
         {
           name: "Creator Campaign Strategy",
           quantity: "1",
           description:
-            "End-to-end influencer strategy \u2014 creator identification, vetting, outreach, briefing, and performance tracking across music, lifestyle, fashion, and dance verticals",
+            "End-to-end influencer strategy — creator identification, vetting, outreach, briefing, and performance tracking across music, lifestyle, fashion, and dance verticals",
         },
         {
           name: "Influencer Seeding Waves",
           quantity: "3+",
           description:
-            "Coordinated creator campaigns timed to singles, album release, and tour dates \u2014 each wave targeting 30+ creators with tailored briefs",
+            "Coordinated creator campaigns timed to singles, album release, and tour dates — each wave targeting 30+ creators with tailored briefs",
         },
         {
           name: "UGC Content Library",
@@ -326,31 +404,31 @@ export const ykNiece: ProjectData = {
           name: "Viral Moment Amplification",
           quantity: "Ongoing",
           description:
-            "Real-time monitoring and rapid-response creator activations when organic moments spike \u2014 turning virality into sustained campaigns",
+            "Real-time monitoring and rapid-response creator activations when organic moments spike — turning virality into sustained campaigns",
         },
       ],
     },
     {
       category: "Email/SMS & E-Commerce",
-      icon: "\u25B2",
+      icon: "△",
       items: [
         {
           name: "Email/SMS Platform Setup",
           quantity: "1",
           description:
-            "Full Klaviyo implementation \u2014 list architecture, segmentation, welcome flow, abandoned cart flow, and integration with merch store and landing pages",
+            "Full Klaviyo implementation — list architecture, segmentation, welcome flow, abandoned cart flow, and integration with merch store and landing pages",
         },
         {
           name: "Campaign Sends",
           quantity: "8+/mo",
           description:
-            "Release announcements, tour updates, merch drops, exclusive content, and re-engagement campaigns \u2014 email and SMS coordinated",
+            "Release announcements, tour updates, merch drops, exclusive content, and re-engagement campaigns — email and SMS coordinated",
         },
         {
           name: "Merch Drop Strategy",
           quantity: "3+ drops",
           description:
-            "Timed product releases coordinated with album milestones and tour dates \u2014 hype sequences, limited editions, and post-drop retargeting",
+            "Timed product releases coordinated with album milestones and tour dates — hype sequences, limited editions, and post-drop retargeting",
         },
         {
           name: "E-Commerce Optimization",
@@ -363,18 +441,18 @@ export const ykNiece: ProjectData = {
   ],
 
   deliverablesSubheading:
-    "Four workstreams operating in sync \u2014 paid media, social strategy, creator marketing, and owned audience infrastructure \u2014 everything needed to convert a breakout moment into a sustainable career engine.",
+    "Four workstreams operating in sync — paid media, social strategy, creator marketing, and owned audience infrastructure — everything needed to convert a breakout moment into a sustainable career engine.",
 
   scope: {
     included: [
       "Full-service paid media management across Meta, TikTok, and YouTube for the 6-month engagement",
       "Social media strategy development and content calendar planning across all active platforms",
-      "Creator marketing \u2014 identification, outreach, campaign management, and performance tracking",
+      "Creator marketing — identification, outreach, campaign management, and performance tracking",
       "Email/SMS platform setup (Klaviyo), list building, automation flows, and campaign sends",
       "Merch store optimization, drop strategy planning, and e-commerce integration",
       "Geo-targeted tour marketing campaigns for all confirmed 2026 dates",
       "Weekly performance snapshots and monthly deep-dive reporting with optimization recommendations",
-      "Onboarding audit \u2014 full digital ecosystem assessment and competitive benchmarking",
+      "Onboarding audit — full digital ecosystem assessment and competitive benchmarking",
     ],
     excluded: [
       "Music production, recording, mixing, or mastering",
@@ -384,7 +462,7 @@ export const ykNiece: ProjectData = {
       "Legal counsel, contract negotiation, or rights management",
     ],
     subheading:
-      "Everything included in this engagement \u2014 and where the boundaries are between CCD\u2019s marketing mandate and the creative and business operations workstreams.",
+      "Everything included in this engagement — and where the boundaries are between CCD's marketing mandate and the creative and business operations workstreams.",
   },
 
   quote: {
@@ -394,7 +472,7 @@ export const ykNiece: ProjectData = {
       {
         name: "Paid Media Management",
         description:
-          "Campaign management across Meta, TikTok, and YouTube \u2014 strategy, creative direction, audience targeting, optimization, and reporting",
+          "Campaign management across Meta, TikTok, and YouTube — strategy, creative direction, audience targeting, optimization, and reporting",
         price: 3500,
         recurring: true,
       },
@@ -428,7 +506,7 @@ export const ykNiece: ProjectData = {
     mediaBudget: {
       label: "Recommended Media Budget",
       amount: 4000,
-      note: "Managed ad spend across Meta, TikTok, and YouTube \u2014 billed directly to platforms, separate from retainer. Recommended $3\u20135K/mo, scaling with album release.",
+      note: "Managed ad spend across Meta, TikTok, and YouTube — billed directly to platforms, separate from retainer. Recommended $3–5K/mo, scaling with album release.",
     },
     discount: {
       label: "6-Month Commitment",
@@ -441,16 +519,16 @@ export const ykNiece: ProjectData = {
         milestone: "Engagement Deposit",
         percentage: 36,
         amount: 22500,
-        due: "Upon approval \u2014 covers onboarding fee + first two months of retainer",
+        due: "Upon approval — covers onboarding fee + first two months of retainer",
       },
       {
-        milestone: "Months 3\u20134",
+        milestone: "Months 3–4",
         percentage: 32,
         amount: 20000,
         due: "July 1, 2026",
       },
       {
-        milestone: "Months 5\u20136",
+        milestone: "Months 5–6",
         percentage: 32,
         amount: 20000,
         due: "September 1, 2026",
@@ -471,13 +549,13 @@ export const ykNiece: ProjectData = {
       step: 2,
       title: "Kickoff Call",
       description:
-        "Strategy alignment session with CCD \u2014 we walk through the audit findings, confirm the album timeline, and lock the campaign calendar.",
+        "Strategy alignment session with CCD — we walk through the audit findings, confirm the album timeline, and lock the campaign calendar.",
     },
     {
       step: 3,
       title: "Onboarding Sprint",
       description:
-        "One-week intensive \u2014 full digital audit, pixel and tracking setup, Klaviyo implementation, paid media architecture, and creator shortlisting.",
+        "One-week intensive — full digital audit, pixel and tracking setup, Klaviyo implementation, paid media architecture, and creator shortlisting.",
     },
     {
       step: 4,
@@ -489,13 +567,13 @@ export const ykNiece: ProjectData = {
       step: 5,
       title: "Monthly Optimization",
       description:
-        "Ongoing performance reviews, budget reallocation, and strategy pivots \u2014 plus onboarding questionnaire for deeper platform access and creative assets.",
+        "Ongoing performance reviews, budget reallocation, and strategy pivots — plus onboarding questionnaire for deeper platform access and creative assets.",
     },
   ],
 
   cta: {
-    headline: "The Moment Is Now \u2014 Don\u2019t Let It Pass",
-    body: "A Billboard Hot 100 hit. Metro Boomin and Quavo on the phone. Lizzo, Latto, and Sexyy Red remixing your record. A debut album and a headline tour on deck. This is the year everything compounds \u2014 or the year it slips. CCD builds the digital infrastructure that makes sure every stream, every ticket, and every fan counts. We\u2019re ready when you are.",
+    headline: "The Moment Is Now — Don't Let It Pass",
+    body: "A Billboard Hot 100 hit. Metro Boomin and Quavo on the phone. Lizzo, Latto, and Sexyy Red remixing your record. A debut album and a headline tour on deck. This is the year everything compounds — or the year it slips. CCD builds the digital infrastructure that makes sure every stream, every ticket, and every fan counts. We're ready when you are.",
     email: "geoff@crowdcontroldigital.com",
   },
 
@@ -509,6 +587,6 @@ export const ykNiece: ProjectData = {
     heroBg: "/images/yk-niece/hero1.png",
     ogImage: "/images/yk-niece/og-image.png",
     hero1Caption: "Full-Service Digital Marketing",
-    brutalistCaption: "YK Niece \u00D7 Crowd Control Digital",
+    brutalistCaption: "YK Niece × Crowd Control Digital",
   },
 };

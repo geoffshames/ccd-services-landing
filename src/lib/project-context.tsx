@@ -48,8 +48,24 @@ export type ProjectData = {
     heading?: string;
     summary: string;
     demographics: string;
+    demographicCards?: {
+      label: string;
+      value: string;
+      detail?: string;
+    }[];
+    personas?: {
+      name: string;
+      ageRange: string;
+      description: string;
+      traits: string[];
+    }[];
     psychographics: string[];
     painPoints: string[];
+    purchaseTriggers?: string[];
+    platforms?: {
+      name: string;
+      description: string;
+    }[];
     quotes?: {
       text: string;
       source: string;
