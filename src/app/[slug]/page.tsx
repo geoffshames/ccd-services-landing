@@ -16,7 +16,7 @@ export async function generateMetadata({
   const project = getProject(slug);
   if (!project) return { title: "Proposal Not Found" };
 
-  const title = `${project.client.name} × ${project.studio.name} — Proposal`;
+  const title = `${project.client.name} — ${project.project.name}`;
   const description = project.project.tagline;
 
   const ogImage = project.images.ogImage
