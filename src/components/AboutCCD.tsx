@@ -13,12 +13,12 @@ const CASE_STUDIES = [
   {
     client: "PESO PLUMA",
     metric: "700M+",
-    description: "SPOTIFY STREAMS GENERATED",
+    description: "SPOTIFY STREAMS",
   },
   {
     client: "KSI",
     metric: "350M+",
-    description: "SPOTIFY STREAMS GENERATED",
+    description: "SPOTIFY STREAMS",
   },
   {
     client: "ILLENIUM",
