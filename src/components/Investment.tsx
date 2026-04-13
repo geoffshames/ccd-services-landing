@@ -34,7 +34,7 @@ export function Investment() {
             {q.model === "retainer" ? "Monthly Investment" : "Project Investment"}
           </h2>
           <p className="text-[16px] text-text-secondary leading-[1.8] mb-20 max-w-2xl tracking-[-0.01em]">
-            {q.model === "retainer" ? "Transparent monthly pricing with quarterly billing aligned to campaign phases." : "Transparent pricing with milestone-based payments aligned to delivery."}
+            {q.model === "retainer" ? "Management fees only — ad spend and creator fees are billed separately at a 15% management rate." : "Transparent pricing with milestone-based payments aligned to delivery."}
           </p>
         </ScrollReveal>
 
@@ -57,7 +57,7 @@ export function Investment() {
                           <div className="text-[15px] font-medium text-text-primary mb-1 tracking-[-0.01em]">
                             {item.name}
                           </div>
-                          <div className="text-[12px] text-text-muted truncate">
+                          <div className="text-[12px] text-text-muted leading-relaxed">
                             {item.description}
                           </div>
                         </div>
@@ -84,6 +84,15 @@ export function Investment() {
                     <div className="px-10 py-4 flex items-center justify-between border-t border-border">
                       <span className="text-[13px] text-text-muted">{q.setupFee.label}</span>
                       <span className="text-[14px] font-mono text-text-secondary tabular-nums">{formatCurrency(q.setupFee.amount)}</span>
+                    </div>
+                  )}
+                  {q.mediaBudget && (
+                    <div className="px-10 py-4 flex items-start justify-between border-t border-border">
+                      <div className="flex-1 min-w-0 pr-4">
+                        <span className="text-[13px] text-text-muted block">{q.mediaBudget.label}</span>
+                        <span className="text-[11px] text-text-muted/50 block mt-1">{q.mediaBudget.note}</span>
+                      </div>
+                      <span className="text-[14px] font-mono text-text-secondary tabular-nums flex-shrink-0">{formatCurrency(q.mediaBudget.amount)}<span className="text-text-muted/60 text-[11px]">/mo</span></span>
                     </div>
                   )}
                   {q.model === "retainer" && (

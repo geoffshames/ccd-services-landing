@@ -458,7 +458,7 @@ export const ykNiece: ProjectData = {
       "Music production, recording, mixing, or mastering",
       "PR, press relations, or media outreach",
       "Tour logistics, booking, or venue coordination",
-      "Graphic design for album artwork, single covers, or music video production",
+      "Graphic design, animation, and music video production (available as add-on — scoped and quoted separately)",
       "Legal counsel, contract negotiation, or rights management",
     ],
     subheading:
@@ -472,7 +472,7 @@ export const ykNiece: ProjectData = {
       {
         name: "Paid Media Management",
         description:
-          "Campaign management across Meta, TikTok, and YouTube — strategy, creative direction, audience targeting, optimization, and reporting",
+          "Campaign strategy, audience targeting, creative direction, optimization, and reporting across Meta, TikTok, and YouTube. Ad spend billed separately at 15% management fee.",
         price: 3500,
         recurring: true,
       },
@@ -486,7 +486,7 @@ export const ykNiece: ProjectData = {
       {
         name: "Creator Marketing",
         description:
-          "Influencer identification, outreach, campaign management, UGC curation, and viral moment amplification",
+          "Influencer identification, outreach, campaign management, UGC curation, and viral moment amplification. Creator fees billed separately at 15% management fee.",
         price: 2500,
         recurring: true,
       },
@@ -506,7 +506,7 @@ export const ykNiece: ProjectData = {
     mediaBudget: {
       label: "Recommended Media Budget",
       amount: 4000,
-      note: "Managed ad spend across Meta, TikTok, and YouTube — billed directly to platforms, separate from retainer. Recommended $3–5K/mo, scaling with album release.",
+      note: "Recommended ad spend across Meta, TikTok, and YouTube — billed to platforms + 15% management fee. Scales up during album release window.",
     },
     discount: {
       label: "6-Month Commitment",
@@ -516,22 +516,40 @@ export const ykNiece: ProjectData = {
     total: 62500,
     paymentSchedule: [
       {
-        milestone: "Engagement Deposit",
-        percentage: 36,
-        amount: 22500,
-        due: "Upon approval — covers onboarding fee + first two months of retainer",
+        milestone: "Month 1 + Setup",
+        percentage: 20,
+        amount: 12500,
+        due: "Upon approval — May 2026",
       },
       {
-        milestone: "Months 3–4",
-        percentage: 32,
-        amount: 20000,
+        milestone: "Month 2",
+        percentage: 16,
+        amount: 10000,
+        due: "June 1, 2026",
+      },
+      {
+        milestone: "Month 3",
+        percentage: 16,
+        amount: 10000,
         due: "July 1, 2026",
       },
       {
-        milestone: "Months 5–6",
-        percentage: 32,
-        amount: 20000,
+        milestone: "Month 4",
+        percentage: 16,
+        amount: 10000,
+        due: "August 1, 2026",
+      },
+      {
+        milestone: "Month 5",
+        percentage: 16,
+        amount: 10000,
         due: "September 1, 2026",
+      },
+      {
+        milestone: "Month 6",
+        percentage: 16,
+        amount: 10000,
+        due: "October 1, 2026",
       },
     ],
     paymentTerms: "Net 7 from invoice",
@@ -584,7 +602,7 @@ export const ykNiece: ProjectData = {
     editorial: "/images/yk-niece/editorial.png",
     texture: "/images/yk-niece/texture.png",
     brutalist: "/images/yk-niece/brutalist.png",
-    heroBg: "/images/yk-niece/hero1.png",
+    heroBg: "/images/yk-niece/hero-bg.png",
     ogImage: "/images/yk-niece/og-image.png",
     hero1Caption: "Full-Service Digital Marketing",
     brutalistCaption: "YK Niece × Crowd Control Digital",
