@@ -58,7 +58,7 @@ export const ykNiece: ProjectData = {
   discovery: {
     heading: "What We Found",
     summary:
-      "Before proposing a single deliverable, we audited YK Niece's digital ecosystem, competitive landscape, and market position. The findings confirm what the numbers already suggest — this is an artist with elite-tier momentum and entry-level infrastructure.",
+      "Before proposing a single deliverable, we audited YK Niece's digital ecosystem, competitive landscape, and market position. The findings confirm what the numbers already suggest — this is an artist with elite-tier momentum and a major opportunity to scale the infrastructure around her.",
     insights: [
       {
         label: "Infrastructure Gap",
