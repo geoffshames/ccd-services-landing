@@ -1,8 +1,10 @@
 import { littleTokyoReborn } from "./little-tokyo-reborn";
+import { ykNiece } from "./yk-niece";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
   "little-tokyo-reborn": littleTokyoReborn,
+  "yk-niece": ykNiece,
 };
 
 export function getProject(slug: string): ProjectData | undefined {
