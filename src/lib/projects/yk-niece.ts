@@ -13,7 +13,7 @@ export const ykNiece: ProjectData = {
   },
   studio: {
     name: "Crowd Control Digital",
-    role: "Co-Founder",
+    role: "Prepared By: Geoff Shames / Co-Founder",
     email: "geoff@crowdcontroldigital.com",
   },
   project: {
