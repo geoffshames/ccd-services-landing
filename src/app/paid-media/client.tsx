@@ -314,7 +314,7 @@ export function PaidMediaClient() {
             <div className="mb-12 text-center">
               <SectionLabel label="LET'S TALK" number="05" />
               <h2 className="text-[clamp(2.5rem,8vw,4rem)] font-bold leading-tight mb-4">
-                Ready to Drive Revenue?
+                Ready To Take Control?
               </h2>
               <p className="text-white/60 font-light">
                 Fill out the form below and we'll get back to you within 24 hours.
