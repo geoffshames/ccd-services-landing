@@ -8,7 +8,7 @@ export function PaidMediaFooter() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-2">
           <Image 
-            src="/brand/cc-brackets.png" 
+            src="/brand/CC-LOGO-2025-PROFILE.png" 
             alt="Crowd Control Digital" 
             width={24} 
             height={24}
