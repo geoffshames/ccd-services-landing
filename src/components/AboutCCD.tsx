@@ -28,17 +28,9 @@ const CASE_STUDIES = [
 ];
 
 const SELECT_CLIENTS = [
-  "88rising", "AEG Presents", "AESPA", "Amazon", "Apple",
-  "Beats By Dre", "BMG", "Capitol Records", "CAA", "Chainsmokers",
-  "Dim Mak Records", "Epitaph Records", "Formula 1", "Foot Locker",
-  "Golden State Warriors", "Imagine Dragons", "Insomniac Events",
-  "Joji", "JPEGMAFIA", "Kappa", "Kid Laroi", "Kiss Of Life",
-  "KSI", "Kygo", "Live Nation", "Marshmello", "Monster Energy",
-  "NBA", "NFL", "NLE Choppa", "Porsche", "RCA Records",
-  "Red Bull Records", "Rich Brian", "RIIZE", "SM Entertainment",
-  "Snoop Dogg", "Sony Music", "Travis Scott",
-  "Universal Music Group", "Virgin Music Group",
-  "Warner Music Group", "Wasserman",
+  "88rising", "Atlantic Records", "Foot Locker", "Golden State Warriors",
+  "Insomniac", "Kappa", "Live Nation", "Malbon", "NFL", "UTA",
+  "Universal Music Group", "Warner Music Group",
 ];
 
 export function AboutCCD() {
