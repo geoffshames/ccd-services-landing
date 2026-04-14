@@ -270,7 +270,7 @@ export function PaidMediaClient() {
                     viewport={{ once: true, margin: "-100px" }}
                     className="p-8 rounded-none bg-white/[0.03] border border-white/10"
                   >
-                    <div className="text-5xl font-bold text-accent/20 mb-4">{item.step}</div>
+                    <div className="text-5xl font-bold text-accent mb-4">{item.step}</div>
                     <h3 className="text-xl font-bold mb-3">{item.title}</h3>
                     <p className="text-white/60 font-light leading-relaxed">{item.description}</p>
                   </motion.div>
