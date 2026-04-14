@@ -357,6 +357,7 @@ export function PaidMediaClient() {
                 "88rising",
                 "Insomniac",
                 "Atlantic Records",
+                "Beats By Dre",
                 "Kappa",
                 "Capcom",
                 "Malbon Golf",
