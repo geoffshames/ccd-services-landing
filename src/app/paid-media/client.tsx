@@ -8,19 +8,39 @@ import { SectionLabel } from "@/components/SectionLabel";
 import { TiltCard } from "@/components/TiltCard";
 import Link from "next/link";
 import {
-  BarChart3,
   TrendingUp,
   Users,
   Target,
   Radio,
   Tv,
-  Music,
   MapPin,
   ShoppingCart,
-  Users2,
   Mail,
   MessageSquare,
 } from "lucide-react";
+
+// Brand logos — simple-icons path data, monochrome, takes currentColor
+function MetaIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M6.915 4.03c-1.968 0-3.683 1.28-4.871 3.113C.704 9.208 0 11.883 0 14.449c0 .706.07 1.369.21 1.973a6.624 6.624 0 0 0 .265.86 5.297 5.297 0 0 0 .371.761c.696 1.159 1.818 1.927 3.593 1.927 1.497 0 2.633-.671 3.965-2.444.76-1.012 1.144-1.626 2.663-4.32l.756-1.339.186-.325c.061.1.121.196.183.3l2.152 3.595c.724 1.21 1.665 2.498 2.47 3.427 1.256 1.446 2.567 2.114 4.31 2.114 1.72 0 2.793-.756 3.474-1.926.486-.836.4-.836.4-.836.064-.113.128-.224.185-.34a7.35 7.35 0 0 0 .208-.475c.031-.081.061-.167.091-.252.03-.085.059-.178.086-.27.027-.092.053-.178.077-.266.024-.087.046-.171.066-.259.02-.088.038-.175.056-.266l.05-.265c.015-.087.028-.175.04-.266.012-.09.023-.18.03-.272.008-.092.016-.183.02-.278.005-.094.008-.188.008-.288 0-2.545-.69-5.225-1.896-7.207-1.188-1.946-2.868-3.217-4.91-3.217-1.04 0-1.89.445-2.6 1.015-1.086.825-2.065 2.122-3.212 4.059l-1.5 2.527v.001c-1.146-1.933-2.124-3.228-3.21-4.053-.708-.57-1.56-1.014-2.598-1.014-2.046 0-3.718 1.267-4.91 3.207l-.007.014ZM10.14 10.77c-.88 1.47-1.52 2.569-1.52 2.569-1.47 2.578-1.97 3.158-2.78 3.158-.81 0-1.287-.717-1.287-2.006 0-2.747 1.373-5.55 3.007-5.55.909 0 1.67.517 2.835 2.155l-.255-.326Zm6.534-1.219c-.435-.83-.842-1.274-1.412-1.274-.574 0-.994.436-1.726 1.593.566.932 1.08 1.896 1.716 2.985l.968 1.617c1.6 2.53 2.266 3.093 3.125 3.093.818 0 1.277-.739 1.277-2.087 0-2.13-.98-4.823-3.948-5.927Z"/>
+    </svg>
+  );
+}
+function TikTokIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+    </svg>
+  );
+}
+function GoogleIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/>
+    </svg>
+  );
+}
 
 export function PaidMediaClient() {
   return (
@@ -147,17 +167,17 @@ export function PaidMediaClient() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
-                  icon: Users2,
+                  icon: MetaIcon,
                   title: "Meta",
                   description: "Facebook, Instagram, Threads & Reels. Full-funnel conversion tracking and dynamic creative optimization.",
                 },
                 {
-                  icon: Music,
+                  icon: TikTokIcon,
                   title: "TikTok",
                   description: "FYP, Discovery, and In-Feed. Native creative strategy for maximum organic amplification.",
                 },
                 {
-                  icon: BarChart3,
+                  icon: GoogleIcon,
                   title: "Google",
                   description: "Search, YouTube, and Performance Max. Intent-based buying with real-time optimization.",
                 },
@@ -193,8 +213,8 @@ export function PaidMediaClient() {
                 },
               ].map((channel, idx) => (
                 <StaggerItem key={idx}>
-                  <TiltCard className="h-full p-6 bg-white/[0.06] border border-white/10 rounded-none hover:border-white/20 transition-colors group cursor-pointer">
-                    <channel.icon className="w-8 h-8 text-accent mb-4 group-hover:scale-110 transition-transform" />
+                  <TiltCard className="h-full p-6 bg-white/[0.06] border border-accent rounded-none">
+                    <channel.icon className="w-8 h-8 text-accent mb-4" strokeWidth={2.5} />
                     <h3 className="text-lg font-bold mb-2">{channel.title}</h3>
                     <p className="text-sm text-white/60 font-light">{channel.description}</p>
                   </TiltCard>
@@ -293,8 +313,8 @@ export function PaidMediaClient() {
                 },
               ].map((result, idx) => (
                 <StaggerItem key={idx}>
-                  <TiltCard className="p-6 bg-white/[0.06] border border-white/10 rounded-none hover:border-accent/50 transition-colors group">
-                    <div className="text-accent text-3xl font-bold mb-2 group-hover:scale-105 transition-transform origin-left">
+                  <TiltCard className="p-6 bg-white/[0.06] border border-accent rounded-none">
+                    <div className="text-accent text-3xl font-bold mb-2">
                       {result.metric}
                     </div>
                     <h3 className="text-lg font-bold mb-2">{result.client}</h3>
