@@ -347,20 +347,20 @@ export function PaidMediaClient() {
             {(() => {
               const clients = [
                 "Universal Music Group",
-                "Warner Music Group",
+                "Apple",
                 "Live Nation",
+                "Formula 1",
+                "NFL",
                 "Golden State Warriors",
+                "Warner Music Group",
+                "Porsche",
                 "88rising",
                 "Insomniac",
-                "Kappa",
                 "Atlantic Records",
-                "NFL",
+                "Kappa",
+                "Capcom",
                 "Malbon Golf",
                 "Foot Locker",
-                "Capcom",
-                "Porsche",
-                "Apple",
-                "Formula 1",
                 "Polymarket",
               ];
               // Duplicate the list so the loop is seamless
