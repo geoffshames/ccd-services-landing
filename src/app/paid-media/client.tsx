@@ -39,11 +39,11 @@ export function PaidMediaClient() {
           <div className="absolute inset-0 bg-black/[0.75]" />
         </div>
 
-        {/* Corner brackets */}
-        <div className="absolute top-20 left-12 w-12 h-12 border-l-2 border-t-2 border-accent pointer-events-none" />
-        <div className="absolute top-20 right-12 w-12 h-12 border-r-2 border-t-2 border-accent pointer-events-none" />
-        <div className="absolute bottom-20 left-12 w-12 h-12 border-l-2 border-b-2 border-accent pointer-events-none" />
-        <div className="absolute bottom-20 right-12 w-12 h-12 border-r-2 border-b-2 border-accent pointer-events-none" />
+        {/* Corner brackets — scale + inset down on mobile so they clear the nav and viewport edges */}
+        <div className="absolute top-24 left-4 w-6 h-6 sm:top-20 sm:left-12 sm:w-12 sm:h-12 border-l-2 border-t-2 border-accent pointer-events-none" />
+        <div className="absolute top-24 right-4 w-6 h-6 sm:top-20 sm:right-12 sm:w-12 sm:h-12 border-r-2 border-t-2 border-accent pointer-events-none" />
+        <div className="absolute bottom-8 left-4 w-6 h-6 sm:bottom-20 sm:left-12 sm:w-12 sm:h-12 border-l-2 border-b-2 border-accent pointer-events-none" />
+        <div className="absolute bottom-8 right-4 w-6 h-6 sm:bottom-20 sm:right-12 sm:w-12 sm:h-12 border-r-2 border-b-2 border-accent pointer-events-none" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-12">
           <motion.div
