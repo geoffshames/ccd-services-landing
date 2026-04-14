@@ -70,7 +70,8 @@ export function PaidMediaClient() {
             >
               <a
                 href="#contact"
-                className="px-8 py-4 bg-accent text-black font-bold rounded-none hover:bg-accent/90 transition-colors w-fit text-center"
+                className="px-8 py-4 bg-accent text-black font-bold rounded-none hover:bg-accent/90 transition-colors w-fit text-center uppercase tracking-wide"
+                style={{ fontFamily: "var(--font-heading)" }}
               >
                 Get a Proposal
               </a>
@@ -78,7 +79,8 @@ export function PaidMediaClient() {
                 href="https://crowdcontroldigital.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 border-2 border-white/20 text-white font-bold rounded-none hover:border-white/40 transition-colors w-fit text-center"
+                className="px-8 py-4 border-2 border-white/20 text-white font-bold rounded-none hover:border-white/40 transition-colors w-fit text-center uppercase tracking-wide"
+                style={{ fontFamily: "var(--font-heading)" }}
               >
                 Learn More
               </a>
@@ -125,16 +127,7 @@ export function PaidMediaClient() {
                 <div className="text-sm text-white/60 font-light">Brands Served</div>
               </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                viewport={{ once: true, margin: "-100px" }}
-                className="text-center"
-              >
-                <div className="text-[clamp(2rem,5vw,4rem)] font-bold text-accent mb-2">15x</div>
-                <div className="text-sm text-white/60 font-light">Average ROAS</div>
-              </motion.div>
+
             </div>
           </ScrollReveal>
         </div>
@@ -314,58 +307,6 @@ export function PaidMediaClient() {
         </div>
       </section>
 
-      {/* CLIENT MARQUEE */}
-      <section className="py-16 px-6 border-b border-white/10 overflow-hidden bg-white/[0.02]">
-        <div className="max-w-6xl mx-auto mb-8">
-          <SectionLabel label="TRUSTED BY" number="04" />
-        </div>
-
-        <ScrollReveal>
-          <div className="flex overflow-hidden">
-            <motion.div
-              animate={{ x: [0, -2000] }}
-              transition={{
-                duration: 20,
-                repeat: Infinity,
-                ease: "linear",
-              }}
-              className="flex gap-8 whitespace-nowrap"
-            >
-              {[
-                "VIBRA URBANA",
-                "KAPPA",
-                "MALBON GOLF",
-                "ILLENIUM",
-                "GREY DAY",
-                "MONSTA X",
-                "PASS THE TIARA",
-                "FUTURE BASS",
-                "INDIE POP",
-                "HIPHOP BEATS",
-                "ELECTRO VIBES",
-                "DANCE FLOOR",
-                "SUMMER FEST",
-                "WINTER TOUR",
-                "SPRING BREAK",
-                "FALL HARVEST",
-                "CHRISTMAS SALE",
-                "HOLIDAY DEALS",
-                "BLACK FRIDAY",
-                "CYBER MONDAY",
-                "NEW YEAR PUSH",
-              ].map((client, idx) => (
-                <div
-                  key={idx}
-                  className="px-6 py-3 bg-white/[0.05] border border-white/10 rounded-none text-white/70 text-sm font-light whitespace-nowrap"
-                >
-                  {client}
-                </div>
-              ))}
-            </motion.div>
-          </div>
-        </ScrollReveal>
-      </section>
-
       {/* CONTACT FORM SECTION */}
       <section id="contact" className="py-20 px-6">
         <div className="max-w-2xl mx-auto">
@@ -466,7 +407,8 @@ export function PaidMediaClient() {
                 type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full px-8 py-4 bg-accent text-black font-bold rounded-none hover:bg-accent/90 transition-colors"
+                className="w-full px-8 py-4 bg-accent text-black font-bold rounded-none hover:bg-accent/90 transition-colors uppercase tracking-wide"
+                style={{ fontFamily: "var(--font-heading)" }}
               >
                 Get Your Proposal
               </motion.button>
