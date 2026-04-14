@@ -348,7 +348,7 @@ export function PaidMediaClient() {
           <motion.div
             className="flex gap-16 whitespace-nowrap"
             animate={{ x: [0, -1800] }}
-            transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
           >
             {(() => {
               const clients = [
