@@ -17,9 +17,9 @@ export function PaidMediaNav() {
           <Image
             src="/brand/CC-LOGO-2024-WHITE.png"
             alt="Crowd Control Digital"
-            width={28}
+            width={200}
             height={28}
-            className="w-7 h-7"
+            className="h-7 w-auto"
           />
         </Link>
         <motion.a
