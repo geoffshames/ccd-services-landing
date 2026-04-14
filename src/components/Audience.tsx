@@ -18,7 +18,7 @@ export function Audience() {
     purchaseTriggers,
     platforms,
     quotes,
-  } = PROJECT.audience;
+  } = PROJECT.audience as any;
 
   return (
     <section
