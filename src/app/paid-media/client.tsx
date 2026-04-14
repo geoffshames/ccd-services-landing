@@ -22,7 +22,7 @@ import {
 // Brand logos — simple-icons path data, monochrome, takes currentColor
 function MetaIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+    <svg viewBox="0 0 24 24" fill="currentColor" fillRule="evenodd" clipRule="evenodd" aria-hidden="true" {...props}>
       <path d="M6.915 4.03c-1.968 0-3.683 1.28-4.871 3.113C.704 9.208 0 11.883 0 14.449c0 .706.07 1.369.21 1.973a6.624 6.624 0 0 0 .265.86 5.297 5.297 0 0 0 .371.761c.696 1.159 1.818 1.927 3.593 1.927 1.497 0 2.633-.671 3.965-2.444.76-1.012 1.144-1.626 2.663-4.32l.756-1.339.186-.325c.061.1.121.196.183.3l2.152 3.595c.724 1.21 1.665 2.498 2.47 3.427 1.256 1.446 2.567 2.114 4.31 2.114 1.72 0 2.793-.756 3.474-1.926.486-.836.4-.836.4-.836.064-.113.128-.224.185-.34a7.35 7.35 0 0 0 .208-.475c.031-.081.061-.167.091-.252.03-.085.059-.178.086-.27.027-.092.053-.178.077-.266.024-.087.046-.171.066-.259.02-.088.038-.175.056-.266l.05-.265c.015-.087.028-.175.04-.266.012-.09.023-.18.03-.272.008-.092.016-.183.02-.278.005-.094.008-.188.008-.288 0-2.545-.69-5.225-1.896-7.207-1.188-1.946-2.868-3.217-4.91-3.217-1.04 0-1.89.445-2.6 1.015-1.086.825-2.065 2.122-3.212 4.059l-1.5 2.527v.001c-1.146-1.933-2.124-3.228-3.21-4.053-.708-.57-1.56-1.014-2.598-1.014-2.046 0-3.718 1.267-4.91 3.207l-.007.014ZM10.14 10.77c-.88 1.47-1.52 2.569-1.52 2.569-1.47 2.578-1.97 3.158-2.78 3.158-.81 0-1.287-.717-1.287-2.006 0-2.747 1.373-5.55 3.007-5.55.909 0 1.67.517 2.835 2.155l-.255-.326Zm6.534-1.219c-.435-.83-.842-1.274-1.412-1.274-.574 0-.994.436-1.726 1.593.566.932 1.08 1.896 1.716 2.985l.968 1.617c1.6 2.53 2.266 3.093 3.125 3.093.818 0 1.277-.739 1.277-2.087 0-2.13-.98-4.823-3.948-5.927Z"/>
     </svg>
   );
@@ -324,6 +324,50 @@ export function PaidMediaClient() {
               ))}
             </div>
           </ScrollReveal>
+        </div>
+      </section>
+
+      {/* TRUSTED BY MARQUEE */}
+      <section className="py-20 border-b border-white/10 overflow-hidden">
+        <div className="max-w-6xl mx-auto mb-10 px-6">
+          <SectionLabel label="TRUSTED BY" number="04" />
+        </div>
+        <div className="relative">
+          {/* gradient fade edges */}
+          <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0A0A0A] to-transparent z-10" />
+          <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0A0A0A] to-transparent z-10" />
+          <motion.div
+            className="flex gap-16 whitespace-nowrap"
+            animate={{ x: [0, -1800] }}
+            transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
+          >
+            {(() => {
+              const clients = [
+                "Universal Music Group",
+                "Warner Music Group",
+                "Live Nation",
+                "Golden State Warriors",
+                "88rising",
+                "Insomniac",
+                "Kappa",
+                "Atlantic Records",
+                "NFL",
+                "Malbon Golf",
+                "UTA",
+                "Foot Locker",
+              ];
+              // Duplicate the list so the loop is seamless
+              return [...clients, ...clients, ...clients].map((name, i) => (
+                <span
+                  key={i}
+                  className="text-[clamp(1.25rem,2.5vw,1.75rem)] font-bold text-accent uppercase tracking-wide"
+                  style={{ fontFamily: "var(--font-heading)" }}
+                >
+                  {name}
+                </span>
+              ));
+            })()}
+          </motion.div>
         </div>
       </section>
 
