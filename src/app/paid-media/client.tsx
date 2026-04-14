@@ -352,6 +352,7 @@ export function PaidMediaClient() {
                 "Formula 1",
                 "NFL",
                 "Golden State Warriors",
+                "Amazon",
                 "Warner Music Group",
                 "Porsche",
                 "88rising",
