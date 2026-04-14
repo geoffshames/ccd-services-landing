@@ -449,11 +449,11 @@ export function PaidMediaClient() {
                 <option value="" disabled selected>
                   Monthly Budget Range
                 </option>
-                <option value="Under $10K">Under $10K</option>
-                <option value="$10K - $25K">$10K - $25K</option>
-                <option value="$25K - $50K">$25K - $50K</option>
-                <option value="$50K - $100K">$50K - $100K</option>
-                <option value="$100K+">$100K+</option>
+                <option value="Under $25K">Under $25K</option>
+                <option value="$25K - $100K">$25K - $100K</option>
+                <option value="$100K - $250K">$100K - $250K</option>
+                <option value="$250K - $500K">$250K - $500K</option>
+                <option value="$500K+">$500K+</option>
               </select>
 
               <div>
