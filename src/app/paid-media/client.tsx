@@ -52,21 +52,24 @@ export function PaidMediaClient() {
 
       {/* HERO SECTION */}
       <section className="relative min-h-[100vh] flex items-center justify-center overflow-hidden pt-20">
-        {/* Background video with overlay (image fallback via poster) */}
-        <div className="absolute inset-0 w-full h-full">
-          <video
-            className="absolute inset-0 w-full h-full object-cover"
-            src="/images/paid-media/hero-bg.mp4"
-            poster="/images/paid-media/hero-bg.jpg"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            aria-hidden="true"
-          />
+        {/* Background image with overlay. Video version commented out below — swap back when ready. */}
+        <div
+          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url(/images/paid-media/hero-bg.jpg)" }}
+        >
           <div className="absolute inset-0 bg-black/[0.65]" />
         </div>
+        {/* <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src="/images/paid-media/hero-bg.mp4"
+          poster="/images/paid-media/hero-bg.jpg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-hidden="true"
+        /> */}
 
         {/* Corner brackets — hug the viewport edges on mobile, expand on desktop */}
         <div className="absolute top-20 left-2 w-4 h-4 sm:top-20 sm:left-12 sm:w-12 sm:h-12 border-l-2 border-t-2 border-accent pointer-events-none" />
