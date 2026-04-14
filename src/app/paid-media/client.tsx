@@ -93,7 +93,7 @@ export function PaidMediaClient() {
       <section className="bg-black/50 border-t border-b border-white/10 py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
