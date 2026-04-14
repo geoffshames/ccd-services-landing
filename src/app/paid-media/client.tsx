@@ -51,7 +51,7 @@ export function PaidMediaClient() {
       <PaidMediaNav />
 
       {/* HERO SECTION */}
-      <section className="relative min-h-[100vh] flex items-center justify-center overflow-hidden pt-20">
+      <section className="relative min-h-[85vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden pt-24 md:pt-16 md:pb-8">
         {/* Hero background is just black — image/video commented out for now. Swap back in when ready. */}
         {/* <video
           className="absolute inset-0 w-full h-full object-cover"
