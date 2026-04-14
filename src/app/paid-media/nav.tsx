@@ -26,7 +26,7 @@ export function PaidMediaNav() {
           href="#contact"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          className="text-[13px] font-semibold text-text-primary px-5 py-2 border border-accent/30 rounded-none hover:border-accent transition-colors uppercase tracking-wide"
+          className="whitespace-nowrap text-[11px] sm:text-[13px] font-semibold text-text-primary px-3 sm:px-5 py-2 border border-accent/30 rounded-none hover:border-accent transition-colors uppercase tracking-wide"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           Get a Proposal
