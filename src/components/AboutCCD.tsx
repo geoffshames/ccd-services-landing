@@ -28,9 +28,8 @@ const CASE_STUDIES = [
 ];
 
 const SELECT_CLIENTS = [
-  "88rising", "Atlantic Records", "Foot Locker", "Golden State Warriors",
-  "Insomniac", "Kappa", "Live Nation", "Malbon", "NFL", "UTA",
-  "Universal Music Group", "Warner Music Group",
+  "Universal Music Group", "Warner Music Group", "Live Nation", "Golden State Warriors",
+  "88rising", "Insomniac", "Kappa", "Atlantic Records", "NFL", "Malbon", "UTA", "Foot Locker",
 ];
 
 export function AboutCCD() {

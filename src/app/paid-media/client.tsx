@@ -121,8 +121,8 @@ export function PaidMediaClient() {
                 viewport={{ once: true, margin: "-100px" }}
                 className="text-center"
               >
-                <div className="text-[clamp(2rem,5vw,4rem)] font-bold text-accent mb-2">500+</div>
-                <div className="text-sm text-white/60 font-light">Brands & Artists Served</div>
+                <div className="text-[clamp(2rem,5vw,4rem)] font-bold text-accent mb-2">250+</div>
+                <div className="text-sm text-white/60 font-light">Brands Served</div>
               </motion.div>
 
               <motion.div
@@ -281,22 +281,22 @@ export function PaidMediaClient() {
                 {
                   client: "Vibra Urbana",
                   metric: "16x ROAS",
-                  description: "Music festival expansion campaign across TikTok and Instagram. 50K ticket sales in 8 weeks.",
+                  description: "Paid media strategy overhaul across festival ticketing campaigns.",
                 },
                 {
                   client: "Kappa",
                   metric: "$3.1M Sales",
-                  description: "Full-funnel DTC campaign across Meta and Google. 34% conversion rate on cold audiences.",
+                  description: "Paid media management across new collection launches.",
                 },
                 {
                   client: "Malbon Golf",
                   metric: "$4.5M Sales",
-                  description: "YouTube and TikTok brand awareness to conversion. Highest ROAS in luxury golf category.",
+                  description: "Paid media management across new collection launches.",
                 },
                 {
                   client: "Illenium",
                   metric: "150K Tickets",
-                  description: "Tour announcement to ticket sales. TikTok and Spotify driving 60% of ticket volume.",
+                  description: "Tour marketing strategy and paid media for The Ascend Tour.",
                 },
               ].map((result, idx) => (
                 <StaggerItem key={idx}>
