@@ -59,7 +59,7 @@ export function PaidMediaClient() {
             </h1>
 
             <p className="text-[clamp(1rem,2.5vw,1.5rem)] text-white/70 max-w-3xl mb-8 font-light leading-relaxed">
-              Full-funnel paid media buying across Meta, TikTok, Google, CTV, programmatic, audio, and OOH. We've generated $500M+ in client revenue.
+              Full-funnel paid media buying across Meta, TikTok, Google, CTV, programmatic, audio, OOH and more.
             </p>
 
             <motion.div
